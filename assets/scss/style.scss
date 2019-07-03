@@ -1,16 +1,35 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 @import "bootstrap";
-#backbtn {
-    position: fixed;
-  bottom: 20px;
-  right: 20px;
-    .badge {
-        color: $primary;
-    }
+
+section .container {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
 }
-h2.display-4 {
-font-family: 'Raleway';
-font-weight: bold;
-color: $primary;
+
+img.gl-header__rogo {
+    height: 150px;
+}
+
+img.gl-header__menu {
+    width: 100px;
+}
+/* SNSボタン */
+.btn-social {
+  width: 40px;
+  color: white;
+}
+
+/* Facebook */
+.btn-fb {
+    background-color: #3B5998;
+    border-radius: 20px;
+}
+
+/* Twitter */
+.btn-tw {
+    background-color: #00aced;
+    border-radius: 20px;
+
 }
