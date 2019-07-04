@@ -8,8 +8,13 @@ section .container {
     text-align: center;
 }
 
-img.gl-header__rogo {
-    height: 150px;
+.title {
+    text-align: center;
+}
+
+img.title__logo {
+    width: 100%;
+    height: 450px;
 }
 
 img.gl-header__menu {

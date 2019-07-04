@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>千葉大学　中口研究室 | Nakaguchi Lab. in Chiba Univ.</title>
+    <title>千葉大学 　中口研究室 | Nakaguchi Lab. in Chiba Univ.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
@@ -12,59 +12,54 @@
 
 <body>
     <header>
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-            <h5 class="my-0 mr-md-auto font-weight-normal">
-                <img class="" src="images/w300h86pxRGB.png" alt="中口ラボ　ロゴ">
-            </h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-                <a class="p-2 text-dark" href="#">アクセス</a>
-                <a class="p-2 text-dark" href="#">お問い合わせ</a>
-                <a class="p-2 text-dark" href="#">リンク</a>
-            </nav>
-            <!--リンクありボタン-->
-            <a class="btn btn-social btn-fb mx-2" href="#" role="button"><i class="fa fa-facebook left"></i></a>
-            <a class="btn btn-social btn-tw mr-3" href="#" role="button"><i class="fa fa-twitter left"></i></a>
-            <language initial="en" lang="ja,en"></language><!-- 宣言？ -->
-            <!-- <div class="lang" language="ja">日本語</div>日本語サイトの時のリンク
-<div class="lang" language="en">ENGLISH</div> -->
-            <!-- 英語サイトの時のリンク -->
-            <button type="button" class="btn btn-outline-danger active w-5 h-2 mx-1">日本語</button>
-            <a class="language" href="#en"><button type="button" class="btn btn-outline-warning">ENGLISH</button></a>
-        </div>
-        <section class="container">
+        <nav class="navbar navbar-expand-lg navbar-light"><!-- ナビゲーションメニューここから -->
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning">日本語</button></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><button type="button" class="btn btn-outline-warning">ENGLISH</button></a></li>
+                    </ul>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">サイトマップ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">リンク</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- ナビゲーションメニューここまで -->
+<div class="title">
+     <img class="title__logo" src="images/title_bg.jpg" alt="">
+</div>
+    </header>
+        <section class="container"><!-- タブの中身ここから -->
             <nav class="gl-header mt-3">
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">
-                        <img class="gl-header__menu" src="images/menu_sample.png" alt="メニュー１">
+                    <a class="nav-item nav-link active bg-dark text-light" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">研究室テーマ
                     </a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">
-                        <img class="gl-header__menu" src="images/menu_sample.png" alt="メニュー２">
+                    <a class="nav-item nav-link bg-dark text-light" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">研究室について
                     </a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab">
-                        <img class="gl-header__menu" src="images/menu_sample.png" alt="メニュー３">
-                    </a>
-                    <img class="gl-header__rogo" src="images/w600h775pxRGB.png" alt="中口ラボ　ロゴ">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">
-                        <img class="gl-header__menu" src="images/menu_sample.png" alt="メニュー１">
-                    </a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">
-                        <img class="gl-header__menu" src="images/menu_sample.png" alt="メニュー２">
+                    <a class="nav-item nav-link bg-dark text-light" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab">セミナー情報
                     </a>
                 </div>
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <iframe src="http://nlab.tms.chiba-u.jp/book/" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト１<br></div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <iframe src="http://nlab.tms.chiba-u.jp/gitbucket/" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                        テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト２</div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <iframe src="https://nlab.tms.chiba-u.jp/moodle/login/index.php" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
+                        テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト３<br></div>
                 </div>
             </nav>
-        </section>
-    </header>
+        </section><!-- タブの中身ここまで -->
+
     <main>
     </main>
     <footer>
