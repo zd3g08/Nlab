@@ -11,78 +11,108 @@
 </head>
 
 <body>
-<div id="wapper">
-<div class="main-img">
-     <p class="main-img__logo">千葉大学フロンティア医工学センター</p>
-    <img src="images/title_logo.png" alt="Nlabタイトルロゴ">
-</div>
-    <header class="header__top">
-        <nav class="navbar navbar-expand-lg navbar-light m-4"><!-- ナビゲーションメニューここから -->
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a href="#" class="btn-gradient-radius">日本語</a></li>
-                        <li class="nav-item"><a href="#" class="btn-gradient-radius mx-2">ENGLISH</a></li>
-                    </ul>
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">サイトマップ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">リンク</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">お問い合わせ</a>
-                        </li>
-                    </ul>
+    <div id="wapper">
+        <header class="header__top">
+            <div class="logo-img">
+                <p class="fixsize">千葉大学フロンティア医工学センター</p>
+                <img src="images/title_logo.png" alt="Nlabタイトルロゴ">
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
+                <!-- ナビゲーションメニューここから -->
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav mr-auto">
+  <div class="font-size-btn">
+    <div class="font-size-btn__box">
+    <p class="font-size-btn__font">文字サイズ</p>
+      <div class="btn-s"><a href="#" class="btn-square">小</a></div>
+      <div class="btn-m"><a href="#" class="btn-square">中</a></div>
+      <div class="btn-l"><a href="#" class="btn-square">大</a></div>
+    </div>
+  </div>
+                        </ul>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <div id="google_translate_element"></div>
+                            <script type="text/javascript">
+                            function googleTranslateElementInit() {
+                                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');}
+                            </script>
+                            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                            </li>
+<!--                             <li class="nav-item"><a class="nav-link" href="#">サイトマップ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li> -->
+                        </ul>
+                    </div>
                 </div>
+            </nav><!-- ナビゲーションメニューここまで -->
+            <span style="color: #fff;">MOVIE</span>
+            <!--             <div class="title">
+                <img class="title__logo" src="images/bg_sample2.jpg">
+            </div> -->
+        </header>
+        <section class="container">
+            <!-- タブの中身ここから -->
+            <nav class="gl-header mt-3">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active bg-dark text-light" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">研究室テーマ
+                    </a>
+                    <a class="nav-item nav-link bg-dark text-light" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">研究室について
+                    </a>
+                    <a class="nav-item nav-link bg-dark text-light" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab">セミナー情報
+                    </a>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト１<br></div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト２</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト３<br></div>
+                </div>
+            </nav>
+        </section><!-- タブの中身ここまで -->
+        <main>
+            <!-- mainコンテンツここから -->
+            <section class="container">
+                <div class="main__contents">
+                    <h1>メインコンテンツ</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis tempore maxime incidunt deserunt, ipsum pariatur, accusamus animi quidem velit tenetur eum nesciunt quos veniam architecto neque impedit! Sed, accusamus.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis aspernatur repellendus, esse illum suscipit nihil, minima beatae quaerat labore nisi fugit, officiis dignissimos saepe ab facilis qui non quas!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maiores, aliquid corporis officiis sit vero odit sunt nobis natus vitae ex doloribus facilis placeat, doloremque, quam rerum! Ab sint, adipisci!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur fugit, sequi quos excepturi explicabo inventore quod error aliquam totam magni, voluptatum, eaque dolores asperiores laudantium tempora temporibus aspernatur non.</p>
+                </div>
+            </section>
+        </main><!-- mainコンテンツここまで -->
+        <footer class="footer__ichiran">
+            <div class="footer__copyright">
+                <span class="text-muted">Copyright: Nakaguchi Lab. Chiba Univ. 2011 All rights reserved.</span>
             </div>
-        </nav><!-- ナビゲーションメニューここまで -->
-        <div class="title">
-            <img class="title__logo" src="images/title_bg.jpg">
-        </div>
-    </header>
-    <section class="container">
-        <!-- タブの中身ここから -->
-        <nav class="gl-header mt-3">
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active bg-dark text-light" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">研究室テーマ
-                </a>
-                <a class="nav-item nav-link bg-dark text-light" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">研究室について
-                </a>
-                <a class="nav-item nav-link bg-dark text-light" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab">セミナー情報
-                </a>
-            </div>
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト１<br></div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト２</div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト３<br></div>
-            </div>
-        </nav>
-    </section><!-- タブの中身ここまで -->
-    <main><!-- mainコンテンツここから -->
-<section class="container">
-    <h1>メインコンテンツ</h1>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis tempore maxime incidunt deserunt, ipsum pariatur, accusamus animi quidem velit tenetur eum nesciunt quos veniam architecto neque impedit! Sed, accusamus.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis aspernatur repellendus, esse illum suscipit nihil, minima beatae quaerat labore nisi fugit, officiis dignissimos saepe ab facilis qui non quas!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maiores, aliquid corporis officiis sit vero odit sunt nobis natus vitae ex doloribus facilis placeat, doloremque, quam rerum! Ab sint, adipisci!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur fugit, sequi quos excepturi explicabo inventore quod error aliquam totam magni, voluptatum, eaque dolores asperiores laudantium tempora temporibus aspernatur non.
-</section>
-    </main><!-- mainコンテンツここまで -->
-    <footer class="footer__ichiran">
-        <div class="footer__copyright">
-            <span class="text-muted">Copyright: Nakaguchi Lab. Chiba Univ. 2011 All rights reserved.</span>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/holder.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script>
+$(function(){
+  // 小ボタンクリック
+  $('.btn-s').click(function(){
+    $("p").css('font-size', '0.88em');
+  });
+  // 中ボタンクリック
+  $('.btn-m').click(function(){
+    $("p").css('font-size', '1rem');
+  });
+  // 大ボタンクリック
+  $('.btn-l').click(function(){
+    $("p").css('font-size', '1.15rem');
+  });
+});
+</script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/holder.min.js"></script>
 
 </html>

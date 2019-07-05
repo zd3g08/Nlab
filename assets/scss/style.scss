@@ -1,64 +1,131 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato|Sawarabi+Gothic&display=swap');
 @import "bootstrap";
+
+/* 文字サイズの変更ボタン */
+.font-size-btn__box {
+    background-color: #eee;
+}
+.font-size-btn__font {
+    display: flex;
+    line-height: 1.8em;
+  font-weight: bold;
+}
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0.2em;
+  font-size: 0.8em;
+  text-decoration: none;
+  background: #3AA0D4;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #076EB2;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+/* 文字サイズ変更ボタンここまで */
+
 // 全体
 body {
     color: #111111;
 }
+
 body,
 #wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato',
+        sans-serif;
+    font-family: 'Sawarabi Gothic',
+        sans-serif;
 }
+
+// bootstrapをいじったところここから
+.mt-5, .my-5 {
+    margin-top: 0px !important;
+}
+// bootstrapをいじったところここまで
+
 section.container {
     width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
+
 // 全体ここまで
 // navやtitle
-div.main-img {
+div.logo-img {
     margin: auto;
     position: absolute;
-    top: 113px;
+    top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 470px;
     height: 200px;
+    z-index: 100;
+    /* 最前面に表示 */
 }
-p.main-img__logo {
-    margin: 20px;
+
+.fixsize {
+    margin: 18px;
     position: absolute;
-    left: 30%;
+    left: 29%;
+    font-size: 0.5em;
+    letter-spacing: 0.1em;
+}
+
+header.header__top {
+    background-color: #076EB2;
+    height: 470px;
+    width: 100%;
 }
 
 .title {
     text-align: center;
 }
+
 img.title__logo {
     width: 100%;
-    height: 450px;
+    height: 500px;
 }
+
 img.gl-header__menu {
     width: 100px;
 }
+
 .btn-gradient-radius {
-  font-size: 0.8em;
-  display: inline-block;
-  padding: 7px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #FFF;
-  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
-  transition: .4s;
+    font-size: 0.8em;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
 }
+
 .btn-gradient-radius:hover {
-  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
 }
 
 // navやtitleここまで
+// mainコンテンツここから
+div.main__contents {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+// mainコンテンツここまで
 // footerここから
 footer {
     width: 100%;
@@ -67,6 +134,7 @@ footer {
     margin-top: auto;
     position: relative;
 }
+
 .footer__copyright {
     width: 100%;
     height: 60px;
@@ -77,6 +145,7 @@ footer {
     position: absolute;
     bottom: 0;
     line-height: 5.5em;
-    font-family: 'Lato', sans-serif;
+
 }
+
 // footerここまで
