@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>千葉大学 　中口研究室 | Nakaguchi Lab. in Chiba Univ.</title>
+    <title>千葉大学 中口研究室 | Nakaguchi Lab. in Chiba Univ.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
@@ -12,69 +12,38 @@
 
 <body>
     <div id="wapper">
-        <header class="header__top">
+        <header>
             <div class="logo-img">
-                <p class="fixsize">千葉大学フロンティア医工学センター</p>
+                <span class="title-text">千葉大学フロンティア医工学センター</span>
                 <img src="images/title_logo.png" alt="Nlabタイトルロゴ">
+            </div><!-- タイトルロゴここまで -->
+            <div class="nav-right">
+                <p class="fsz">
+                    <span class="fsz-font">文字サイズ</span>
+                    <a href="#" class="btn-s">小</a>
+                    <a href="#" class="btn-m">中</a>
+                    <a href="#" class="btn-l">大</a>
+                </p>
+                <div class="google_translate" id="google_translate_element"></div>
+                <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.Vertical, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
+                }
+                </script>
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
-                <!-- ナビゲーションメニューここから -->
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav mr-auto">
-  <div class="font-size-btn">
-    <div class="font-size-btn__box">
-    <p class="font-size-btn__font">文字サイズ</p>
-      <div class="btn-s"><a href="#" class="btn-square">小</a></div>
-      <div class="btn-m"><a href="#" class="btn-square">中</a></div>
-      <div class="btn-l"><a href="#" class="btn-square">大</a></div>
-    </div>
-  </div>
-                        </ul>
-                        <ul class="navbar-nav ">
-                            <li class="nav-item">
-                                <div id="google_translate_element"></div>
-                            <script type="text/javascript">
-                            function googleTranslateElementInit() {
-                                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');}
-                            </script>
-                            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                            </li>
-<!--                             <li class="nav-item"><a class="nav-link" href="#">サイトマップ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">リンク</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">お問い合わせ</a></li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav><!-- ナビゲーションメニューここまで -->
-            <span style="color: #fff;">MOVIE</span>
-            <!--             <div class="title">
-                <img class="title__logo" src="images/bg_sample2.jpg">
-            </div> -->
+            <section class="header__video">
+                <video class="video" src="images/sample_movie.mp4" autoplay loop>
+                    <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
+                </video>
+            </section>
         </header>
         <section class="container">
-            <!-- タブの中身ここから -->
-            <nav class="gl-header mt-3">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active bg-dark text-light" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab">研究室テーマ
-                    </a>
-                    <a class="nav-item nav-link bg-dark text-light" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab">研究室について
-                    </a>
-                    <a class="nav-item nav-link bg-dark text-light" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab">セミナー情報
-                    </a>
-                </div>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト１<br></div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト２</div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        テスト<br>テスト<br>テスト<br>テスト<br>テスト<br>テスト３<br></div>
-                </div>
-            </nav>
-        </section><!-- タブの中身ここまで -->
+            <div class="research_theme">
+                <h1>研究テーマ</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis tempore maxime incidunt deserunt, ipsum pariatur, accusamus animi quidem velit tenetur eum nesciunt quos veniam architecto neque impedit! Sed, accusamus.</p>
+            </div>
+        </section>
         <main>
             <!-- mainコンテンツここから -->
             <section class="container">
@@ -94,25 +63,27 @@
         </footer>
     </div>
 </body>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/holder.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script>
-$(function(){
-  // 小ボタンクリック
-  $('.btn-s').click(function(){
-    $("p").css('font-size', '0.88em');
-  });
-  // 中ボタンクリック
-  $('.btn-m').click(function(){
-    $("p").css('font-size', '1rem');
-  });
-  // 大ボタンクリック
-  $('.btn-l').click(function(){
-    $("p").css('font-size', '1.15rem');
-  });
+$(function() {
+    // 小ボタンクリック
+    $('.btn-s').click(function() {
+        $("p").css('font-size', '0.88rem');
+    });
+
+    // 中ボタンクリック
+    $('.btn-m').click(function() {
+        $("p").css('font-size', '1rem');
+    });
+
+    // 大ボタンクリック
+    $('.btn-l').click(function() {
+        $("p").css('font-size', '1.15rem');
+    });
+
 });
 </script>
-<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="js/holder.min.js"></script>
-
-</html>
+/html>

@@ -3,67 +3,111 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato|Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
 @import "bootstrap";
-
-/* 文字サイズの変更ボタン */
-.font-size-btn__box {
-    background-color: #eee;
-}
-.font-size-btn__font {
-    display: flex;
-    line-height: 1.8em;
-  font-weight: bold;
-}
-.btn-square {
-  display: inline-block;
-  padding: 0.5em 1em;
-  margin: 0.2em;
-  font-size: 0.8em;
-  text-decoration: none;
-  background: #3AA0D4;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 4px #076EB2;
-  border-radius: 3px;
-  font-weight: bold;
-}
-.btn-square:active {
-  /*ボタンを押したとき*/
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);/*下に動く*/
-  border-bottom: none;/*線を消す*/
-}
-/* 文字サイズ変更ボタンここまで */
 
 // 全体
 body {
     color: #111111;
+    font-family: 'Noto Sans JP', sans-serif;
 }
+
 
 body,
 #wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Lato',
-        sans-serif;
-    font-family: 'Sawarabi Gothic',
-        sans-serif;
 }
-
-// bootstrapをいじったところここから
-.mt-5, .my-5 {
-    margin-top: 0px !important;
-}
-// bootstrapをいじったところここまで
 
 section.container {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
 // 全体ここまで
-// navやtitle
+
+
+/* 文字サイズの変更ボタン */
+
+.fsz {
+    margin: 7px 0px 5px 0;
+}
+
+span.fsz-font {
+    font-size: 0.8em;
+    padding-right: 3px;
+    vertical-align: bottom;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+
+    font-weight: bold;
+}
+
+.btn-s, .btn-m, .btn-l {
+  font-size: 0.9em;
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  background: #076eb2;/*背景色*/
+  color: #ffffff;/*=背景色*/
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2),0 2px 0 #065e99;
+  border-radius: 2px;
+  font-weight: bold;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.589), 1px 1px rgba(0, 0, 0, 0.38);
+  transition: .3s;
+}
+.btn-s:hover {
+  background: #3aa0d4;
+}
+.btn-s:active {
+  transform: translate(0,2px);
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+.btn-m:hover {
+  background: #3aa0d4;
+}
+.btn-m:active {
+  transform: translate(0,2px);
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}.btn-l:hover {
+  background: #3aa0d4;
+}
+.btn-l:active {
+  transform: translate(0,2px);
+  box-shadow: none;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+a.btn-s,
+a.btn-m,
+a.btn-l {
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a.btn-s:hover,
+a.btn-m:hover,
+a.btn-l:hover {
+    color: #ffffff;
+}
+
+//* 文字サイズ変更ボタンここまで */
+
+/* Google翻訳ここから */
+.google_translate {
+  margin-top: 10px;
+  z-index: 30;
+}
+/* google翻訳ここまで */
+
+
+// navやtitleここから
 div.logo-img {
     margin: auto;
     position: absolute;
@@ -72,26 +116,54 @@ div.logo-img {
     transform: translate(-50%, -50%);
     width: 470px;
     height: 200px;
-    z-index: 100;
-    /* 最前面に表示 */
+    z-index: 50;
 }
 
-.fixsize {
-    margin: 18px;
+.title-text {
+    margin: 22px 0 0 13px;
     position: absolute;
-    left: 29%;
-    font-size: 0.5em;
-    letter-spacing: 0.1em;
+    left: 32%;
+    color: #ffffff;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
 }
 
-header.header__top {
-    background-color: #076EB2;
-    height: 470px;
+.nav-right { /* ナビゲーションバー */
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    right: 0;
     width: 100%;
+    height: 45px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 40;
+    text-align: right;
+    box-shadow: 0 0 4px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff,
+        0 0 2px #ffffff, 0 0 1px #ffffff;
 }
 
-.title {
-    text-align: center;
+section.header__video { /* 背景動画のグラデーション */
+    width: 100%;
+    background: linear-gradient(to bottom, #1da96f 0%, #3aa0d4 100%);
+    opacity: 0.4;
+    animation: huerotator 4s infinite alternate;
+}
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes huerotator {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
 }
 
 img.title__logo {
@@ -120,9 +192,28 @@ img.gl-header__menu {
 
 // navやtitleここまで
 // mainコンテンツここから
+.research_theme { /* 研究テーマ */
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 40;
+    text-align: center;
+    box-shadow: 0 0 4px #ffffff, 0 0 3px #ffffff, 0 0 3px #ffffff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+
 div.main__contents {
     margin-top: 50px;
     margin-bottom: 20px;
+    color: #111111;
+    background-color: red;
 }
 
 // mainコンテンツここまで
