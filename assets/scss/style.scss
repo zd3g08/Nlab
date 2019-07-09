@@ -271,8 +271,11 @@ div.main_r {
 // footerここから
 footer {
     width: 100%;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaQpBJlGyFRGkCJirCdeITGmgZ02cAoBLmQnIlMIzrkAAAAASUVORK5CYII=) repeat,
+    background:
+    url(../images/footer_bg.png) left bottom no-repeat,
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaQpBJlGyFRGkCJirCdeITGmgZ02cAoBLmQnIlMIzrkAAAAASUVORK5CYII=) repeat,
     linear-gradient(90deg, #3AA0D4 0%, #076EB2 100%,);
+    background-color:rgba(255,255,255,0.8);
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
