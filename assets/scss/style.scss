@@ -158,23 +158,25 @@ div.logo-img {
     background-color: rgba(255, 255, 255, 1);
     z-index: 40;
     text-align: right;
-    box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff,
-        0 20px 30px #ffffff, 0 20px 30px #ffffff;
+    box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff;
+        // 0 20px 30px #ffffff, 0 20px 30px #ffffff;
 }
 
 section.header__video {
-    /* 背景動画のグラデーション */
-    width: 100%;
-    background: linear-gradient(to top, #1da96f 0%, #3aa0d4 100%);
-    /* background: linear-gradient(to bottom, #1e2120 0%, #000000 30%, #293db6 60%, #2db0ce 100%); */
-    opacity: 0.4;
-    /*     animation: huerotator 4s infinite alternate; */
-    animation: huerotator 6s infinite alternate;
+/*     背景動画のグラデーション
+min-width: 100%;
+height: 700px;
+background: linear-gradient(to top, #1da96f 0%, #3aa0d4 100%);
+background: linear-gradient(to bottom, #1e2120 0%, #000000 30%, #293db6 60%, #2db0ce 100%);
+opacity: 0.4;
+animation: huerotator 4s infinite alternate;
+animation: huerotator 6s infinite alternate; */
+background-color: #000000;
 }
 
 .video {
-    width: 100%;
-    height: 100%;
+    min-width: 100%;
+    height: 700px;
 }
 
 @keyframes huerotator {
@@ -215,6 +217,13 @@ img.gl-header__menu {
 
 // navやtitleここまで
 // mainコンテンツここから
+main {
+    width: 100%;
+   background: url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAG0lEQVQoU2N8//59AwMBwAhSJCgoiFfhqCIGALZlI1fEYv1lAAAAAElFTkSuQmCC
+    ) repeat;
+}
+
 .research_theme {
     /* 研究テーマ */
     display: inline-block;
@@ -245,14 +254,16 @@ section.container__main {
 
 div.main_l {
     width: 55%;
-    border: 0.5px dashed green;
     margin: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
 
 div.main_r {
     width: 45%;
-    border: 0.5px dashed blue;
     margin: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
 
 
@@ -260,10 +271,12 @@ div.main_r {
 // footerここから
 footer {
     width: 100%;
-    background: linear-gradient(90deg, #3AA0D4 0%, #076EB2 100%, );
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaQpBJlGyFRGkCJirCdeITGmgZ02cAoBLmQnIlMIzrkAAAAASUVORK5CYII=) repeat,
+    linear-gradient(90deg, #3AA0D4 0%, #076EB2 100%,);
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     position: relative;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -298,7 +311,10 @@ footer {
     border-right: 1px solid #a1cae6;
     box-shadow: 1px 0px 0px 0px #087ecc;
     padding: 15px 0 0 0;
+    margin-right: 20px;
     font-size: 0.9em;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: .2em;
 }
 
 .footer__menu2 {
@@ -307,13 +323,19 @@ footer {
     border-right: 1px solid #a1cae6;
     box-shadow: 1px 0px 0px 0px #087ecc;
     padding: 15px 0 0 0;
+    margin-right: 20px;
     font-size: 0.9em;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: .2em;
 }
 
 .footer__menu3 {
     width: 420px;
-    height: 265px;
+    height: 200px;
+    border-right: 1px solid #a1cae6;
     padding: 15px 0 0 0;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: .2em;
 }
 
 span.tel_text {
@@ -375,4 +397,5 @@ a.footer__text:hover {
 .google-maps {
     width: 100%;
 }
+
 // footerここまで
