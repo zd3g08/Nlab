@@ -13,7 +13,27 @@
 
 <body>
     <div id="wapper">
+        <a href="#" class="back-to-top"></a>
         <header>
+            <!-- ナビメニュー部分 -->
+            <nav class="NavMenu">
+                <ul>
+                    <li><a href="#">研究室について</a></li>
+                    <li><a href="#">研究テーマ</a></li>
+                    <li><a href="#">最新情報</a></li>
+                    <li><a href="#">セミナー情報</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">研究メンバー用</a></li>
+                </ul>
+            </nav>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="Toggle">
+                <h6 class="Toggle_menu">MENU</h6>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="logo-img">
                 <span class="title-text">千葉大学フロンティア医工学センター</span>
                 <img src="images/title_logo.png" alt="Nlabタイトルロゴ">
@@ -41,7 +61,7 @@
         </header>
         <section class="container">
             <div class="research_theme">
-                <h1>研究テーマ</h1>
+                <h1>研究テーマ </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis tempore maxime incidunt deserunt, ipsum pariatur, accusamus animi quidem velit tenetur eum nesciunt quos veniam architecto neque impedit! Sed, accusamus.</p>
                 <div class="row">
                     <div class="col-md-3">
@@ -149,5 +169,32 @@ $(function() {
 
 });
 </script>
+<script>
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) { // 100pxスクロールしていたら上に戻るボタンを表示
+            $(".back-to-top").fadeIn();
+        } else {
+            $(".back-to-top").fadeOut();
+        }
+    });
+    $(".back-to-top").click(function() {
+        $("body,html").animate({ scrollTop: 0 }, 800); // 800msかけて上に戻る
+    });
+});
+</script>
+<!-- //トグルボタンが押されたときに、クラスを付与 -->
+<script type="text/javascript">
+$(function() {
+    $('.Toggle').click(function() {
+        $(this).toggleClass('active');
 
+        if ($(this).hasClass('active')) {
+            $('.NavMenu').addClass('active'); //クラスを付与
+        } else {
+            $('.NavMenu').removeClass('active'); //クラスを外す
+        }
+    });
+});
+</script>
 </html>

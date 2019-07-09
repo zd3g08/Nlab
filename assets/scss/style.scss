@@ -33,6 +33,45 @@ ul {
     list-style: none;
 }
 
+// topに戻るボタン
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+    display: none;
+}
+.back-to-top:before {
+    font-family: "FontAwesome";
+    content: "\f062";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(0deg,#228e41 0%, #1da96f 100%);
+    border: 1px solid #ffffff;
+    padding: 7px 0 0 12px;
+}
+.back-to-top:after {
+    content: "";
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.back-to-top:hover {
+    color: #fcd821;
+}
 
 // 全体ここまで
 
@@ -40,16 +79,16 @@ ul {
 /* 文字サイズの変更ボタン */
 
 .fsz {
-    margin: 7px 0px 5px 0;
+    margin: 3px 0px 0px 0;
 }
 
 span.fsz-font {
     font-size: 0.8em;
     padding-right: 3px;
-    vertical-align: bottom;
+    vertical-align: middle;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-
     font-weight: bold;
+    color: #666666;
 }
 
 .btn-s,
@@ -118,7 +157,7 @@ a.btn-l:hover {
 
 /* Google翻訳ここから */
 .google_translate {
-    margin-top: 10px;
+    margin-top: 2px;
     z-index: 30;
 }
 
@@ -126,6 +165,142 @@ a.btn-l:hover {
 
 
 // navやtitleここから
+
+// ハンバーガーメニューここから
+/*ナビメニューのスタイルを指定*/
+nav.NavMenu{
+    position: fixed; /*表示位置を固定*/
+    z-index: 160; /*重ね順を変更*/
+    top: 5%; /*表示位置を指定*/
+    left: 5%; /*表示位置を指定*/
+    background: #ffffff;/*背景を白にする*/
+    text-align: center; /*テキスト揃え*/
+    padding-left: 0px;
+    width: 180px; /*全幅表示*/
+    transform: translateY(-200%); /*ナビを上に隠す*/
+    transition: all 0.6s; /*アニメーションの時間を指定*/
+    font-size: .8em;
+}
+
+nav.NavMenu ul{
+    background: linear-gradient(-90deg, #3AA0D4 0%, #076EB2 100%,);
+    background-color:rgba(255,255,255,0.8);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav.NavMenu ul li{
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: .5px  solid rgba(255,255,255,0.4);
+}
+nav.NavMenu ul li:hover {
+   background-color: rgba(255,255,255,0.3);
+    -webkit-transition: .2s ease-in-out;   /*変化の速度を指定*/
+    -moz-transition: .2s ease-in-out;      /*変化の速度を指定*/
+    transition: .2s ease-in-out;           /*変化の速度を指定*/
+}
+
+nav.NavMenu ul li:last-child{
+    padding-bottom: 0;
+    border-bottom: none; /*最後のメニュー項目のみ下線を消す*/
+}
+
+nav.NavMenu ul li a{
+    display: block; /*クリックできる領域を広げる*/
+    color: #ffffff;
+    padding: 1em 0;
+    list-style: none;
+    letter-spacing: .2em;
+}
+
+/*トグルボタンが押されたときに付与するクラス*/
+nav.NavMenu.active{
+    transform: translateY(0%);
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    left: 1%;
+    top: 7%;
+    width: 42px;
+    height: 55px;
+    cursor: pointer;
+    z-index: 165;
+    background-color: #ffffff;
+    border-radius: .2em;
+    -webkit-transition: .35s ease-in-out;   /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;      /*変化の速度を指定*/
+    transition: .35s ease-in-out;           /*変化の速度を指定*/
+}
+.Toggle_menu {
+    margin: 4px 0 0 3px;
+    font-size: .8em;
+    -webkit-transition: .35s ease-in-out;   /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;      /*変化の速度を指定*/
+    transition: .35s ease-in-out;           /*変化の速度を指定*/
+}
+
+.Toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 4px #076eb2;
+    border-radius: 30px;
+    -webkit-transition: .35s ease-in-out;   /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;      /*変化の速度を指定*/
+    transition: .35s ease-in-out;           /*変化の速度を指定*/
+    left: 6px;
+}
+
+.Toggle span:nth-child(2) {
+    top: 20px;
+}
+
+.Toggle span:nth-child(3) {
+    top: 28px;
+}
+
+.Toggle span:nth-child(4) {
+    top: 36px;
+}
+
+.Toggle.active {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+
+}
+.Toggle.active :nth-child(1) {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-5px);
+}
+/* 最初のspanをマイナス45度に */
+.Toggle.active span:nth-child(2) {
+    top: 30px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.Toggle.active span:nth-child(3),
+.Toggle.active span:nth-child(4) {
+    top: 30px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+// ハンバーガーメニューここまで
+
+
 div.logo-img {
     margin: auto;
     position: absolute;
@@ -134,7 +309,7 @@ div.logo-img {
     transform: translate(-50%, -50%);
     width: 470px;
     height: 200px;
-    z-index: 50;
+    z-index: 150;
 }
 
 .title-text {
@@ -153,12 +328,12 @@ div.logo-img {
     top: 45px;
     right: 0;
     width: 100%;
-    height: 70px;
+    height: 55px;
     padding-right: 20px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .8);
     z-index: 40;
     text-align: right;
-    box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 2px #ffffff;
+    box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff;
         // 0 20px 30px #ffffff, 0 20px 30px #ffffff;
 }
 
@@ -272,7 +447,7 @@ div.main_r {
 footer {
     width: 100%;
     background:
-    url(../images/footer_bg.png) left bottom no-repeat,
+    url(../images/footer_bg_rogo.png) right bottom no-repeat,
     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAL0lEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaQpBJlGyFRGkCJirCdeITGmgZ02cAoBLmQnIlMIzrkAAAAASUVORK5CYII=) repeat,
     linear-gradient(90deg, #3AA0D4 0%, #076EB2 100%,);
     background-color:rgba(255,255,255,0.8);
@@ -290,7 +465,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 .footer__midasi {
@@ -333,10 +508,10 @@ footer {
 }
 
 .footer__menu3 {
-    width: 420px;
+    width: 430px;
     height: 200px;
     border-right: 1px solid #a1cae6;
-    padding: 15px 0 0 0;
+    padding: 15px 5px 0 0;
     background-color: rgba(255,255,255,0.1);
     border-radius: .2em;
 }
@@ -362,12 +537,17 @@ span.tel_text {
     color: #076EB2;
     font-weight: bold;
     font-size: 1em;
+    -webkit-transition: .2s ease-in-out;   /*変化の速度を指定*/
+    -moz-transition: .2s ease-in-out;      /*変化の速度を指定*/
+    transition: .2s ease-in-out;           /*変化の速度を指定*/
 }
 .footer__contact:hover {
 background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQYV2NkQAP/gYARWQwsAAIwQZgAiA8WRBYAC6ILgAQBGkYUAnD09D0AAAAASUVORK5CYII=
 ) repeat,
         #fcd821;
-    transition: background .5s;
+    -webkit-transition: .35s ease-in-out;   /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;      /*変化の速度を指定*/
+    transition: .35s ease-in-out;           /*変化の速度を指定*/
 }
 
 .footer__copyright {
