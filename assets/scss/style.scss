@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import "bootstrap";
 
 // 全体
@@ -27,6 +28,11 @@ section.container {
     margin: 0 auto;
     text-align: center;
 }
+
+ul {
+   list-style: none;
+}
+
 
 // 全体ここまで
 
@@ -265,6 +271,57 @@ footer {
     font-weight: none;
 }
 
+div.footer__container {
+    display: flex;
+    padding: 75px 0 0 200px;
+}
+
+.footer__midasi {
+  border: 0;/*線色*/
+  text-align: center;
+  font-size: 1em;
+}
+
+.footer__midasi__text {
+  color: #ffffff;/*文字色*/
+  border-radius: 2em;/*角丸*/
+  background-color: #73bfe1;
+  padding: 0.3em 1em;/*文字周りの余白*/
+  width: 100%;
+  letter-spacing: 0.1em;
+}
+
+.footer__menu1 {
+    width: 200px;
+    height: 200px;
+    border-right: 1px solid #a1cae6;
+    box-shadow: 1px 0px 0px 0px #087ecc;
+    padding: 15px 0 0 0;
+    font-size: 0.9em;
+}
+
+.footer__menu2 {
+    width: 200px;
+    height: 200px;
+    border-right: 1px solid #a1cae6;
+    box-shadow: 1px 0px 0px 0px #087ecc;
+    padding: 15px 0 0 0;
+    font-size: 0.9em;
+}
+
+.footer__menu3 {
+    width: 520px;
+    height: 265px;
+    padding: 15px 0 0 40px;
+}
+
+span.tel_text {
+    font-size: 2em;
+    vertical-align: sub;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
 .footer__copyright {
     width: 100%;
     height: 60px;
@@ -277,14 +334,17 @@ footer {
     line-height: 5.5em;
 
 }
-
-a.footer_text {
+.footer__text {
+    text-align: left;
+    color: #ffffff;
+}
+a.footer__text {
     text-decoration: none;
     transition: color .2s;
     color: #ffffff;
 }
-a.footer_text:hover {
-  color: yellow;
+a.footer__text:hover {
+  color: #cccccc;
 }
 
 // footerここまで
