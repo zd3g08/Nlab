@@ -24,13 +24,13 @@ body,
 }
 
 section.container {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
 
 ul {
-   list-style: none;
+    list-style: none;
 }
 
 
@@ -260,7 +260,6 @@ div.main_r {
 // footerここから
 footer {
     width: 100%;
-    height: 450px;
     background: linear-gradient(90deg, #3AA0D4 0%, #076EB2 100%, );
     margin-top: auto;
     margin-left: auto;
@@ -271,24 +270,26 @@ footer {
     font-weight: none;
 }
 
-div.footer__container {
+.footer__container {
     display: flex;
-    padding: 75px 0 0 200px;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer__midasi {
-  border: 0;/*線色*/
-  text-align: center;
-  font-size: 1em;
+    border: 0;/*線色*/
+    text-align: center;
+    font-size: 1em;
 }
 
 .footer__midasi__text {
-  color: #ffffff;/*文字色*/
-  border-radius: 2em;/*角丸*/
-  background-color: #73bfe1;
-  padding: 0.3em 1em;/*文字周りの余白*/
-  width: 100%;
-  letter-spacing: 0.1em;
+    color: #ffffff;/*文字色*/
+    border-radius: 2em;/*角丸*/
+    background-color: #73bfe1;
+    padding: 0.3em 1em;/*文字周りの余白*/
+    width: 100%;
+    letter-spacing: 0.1em;
 }
 
 .footer__menu1 {
@@ -310,9 +311,9 @@ div.footer__container {
 }
 
 .footer__menu3 {
-    width: 520px;
+    width: 420px;
     height: 265px;
-    padding: 15px 0 0 40px;
+    padding: 15px 0 0 0;
 }
 
 span.tel_text {
@@ -320,6 +321,28 @@ span.tel_text {
     vertical-align: sub;
     padding: 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+.footer__contact {
+    width: 350px;
+    height: 70px;
+    border: 0px;
+    border-radius: .3em;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQYV2NkQAP/gYARWQwsAAIwQZgAiA8WRBYAC6ILgAQBGkYUAnD09D0AAAAASUVORK5CYII=
+) repeat,
+        #fcee21;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #076EB2;
+    font-weight: bold;
+    font-size: 1em;
+}
+.footer__contact:hover {
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAI0lEQVQYV2NkQAP/gYARWQwsAAIwQZgAiA8WRBYAC6ILgAQBGkYUAnD09D0AAAAASUVORK5CYII=
+) repeat,
+        #fcd821;
+    transition: background .5s;
 }
 
 .footer__copyright {
@@ -332,19 +355,24 @@ span.tel_text {
     position: absolute;
     bottom: 0;
     line-height: 5.5em;
-
 }
+
 .footer__text {
     text-align: left;
     color: #ffffff;
 }
+
 a.footer__text {
     text-decoration: none;
     transition: color .2s;
     color: #ffffff;
 }
+
 a.footer__text:hover {
-  color: #cccccc;
+    color: #cccccc;
 }
 
+.google-maps {
+    width: 100%;
+}
 // footerここまで
