@@ -40,11 +40,11 @@
             </div><!-- タイトルロゴここまで -->
             <div class="nav-right">
                 <p class="fsz">
-                    <span class="fsz-font">文字サイズ</span>
                     <a href="#" class="btn-s">小</a>
                     <a href="#" class="btn-m">中</a>
                     <a href="#" class="btn-l">大</a>
                 </p>
+                <span class="fsz-font">文字サイズ</span>
                 <div class="google_translate" id="google_translate_element"></div>
                 <script type="text/javascript">
                 function googleTranslateElementInit() {
@@ -62,7 +62,6 @@
         <section class="container">
             <div class="research_theme">
                 <h1>研究テーマ </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis tempore maxime incidunt deserunt, ipsum pariatur, accusamus animi quidem velit tenetur eum nesciunt quos veniam architecto neque impedit! Sed, accusamus.</p>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card mb-3 shadow-sm">
@@ -109,11 +108,22 @@
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </section>
+            <section class="container">
+                <div class="access">
+                    <h1>アクセス</h1>
+                    <p>千葉大学 西千葉キャンパス
+                        フロンティア医工学センター(CFME) A棟 2階
+                        JR西千葉駅から徒歩約8分</p>
+                    <p>所属：千葉大学フロンティア医工学センター
+                        氏名：教授 中口俊哉
+                        住所：〒263-8522 千葉市稲毛区弥生町1-33</p>
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.935819006356!2d140.0990303!3d35.6293087!3m2!1i1024!2i768!4f13!3m3!1m2!1s0x6022849d37769a21%3A0x516c5457385267fe!2z44CSMjYzLTAwMjIg5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy65byl55Sf55S677yR4oiS77yT77yT!5e0!3m2!1sja!2sjp!4v1562647007995!5m2!1sja!2sjp" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
         </main><!-- mainコンテンツここまで -->
         <footer>
-            <div class="google-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.935819006356!2d140.0990303!3d35.6293087!3m2!1i1024!2i768!4f13!3m3!1m2!1s0x6022849d37769a21%3A0x516c5457385267fe!2z44CSMjYzLTAwMjIg5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy65byl55Sf55S677yR4oiS77yT77yT!5e0!3m2!1sja!2sjp!4v1562647007995!5m2!1sja!2sjp" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
             <section class="footer__container">
                 <div class="footer__menu1">
                     <p class="footer__midasi"><span class="footer__midasi__text">研究メンバー用</span></p>
@@ -197,4 +207,19 @@ $(function() {
     });
 });
 </script>
+<script type="text/javascript">
+window.onscroll = function() {
+    var check = window.pageYOffset; //現在のスクロール地点
+    var docHeight = $(document).height(); //ドキュメントの高さ
+    var dispHeight = $(window).height(); //表示領域の高さ
+
+    if (check > docHeight - dispHeight - 1100) { //判別式　500はフッターからの距離です（ここはサイトのフッターに合わせて変更しましょう）
+        $('.nav-right').fadeOut(300); //1000 はフェードアウトの速度です。調整可
+
+    } else {
+        $('.nav-right').fadeIn(300); //1000 はフェードインの速度です。調整可
+    }
+};
+</script>
+
 </html>
