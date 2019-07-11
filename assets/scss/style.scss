@@ -421,12 +421,18 @@ padding: 35px;
     left: 10%;
     width: 80%;
     margin: 0 auto;
-    height: 430px;
+    height: 320px;
     background-color: rgba(255, 255, 255, .5);
     z-index: 40;
     text-align: center;
     box-shadow: 0 0 5px #ffffff, 0 0 2px #ffffff, 0 0 1px #ffffff;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.research_theme__col {
+    width: 20%;
+    height: 10;
+    display: inline-block;
 }
 
 .row img {
