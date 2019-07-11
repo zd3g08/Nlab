@@ -12,7 +12,7 @@
 // 全体
 body {
     color: #111111;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body,
@@ -23,7 +23,7 @@ body,
 }
 
 section.container {
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
 }
@@ -31,6 +31,21 @@ section.container {
 ul {
     list-style: none;
 }
+
+/* スクロールバー全体 */
+.jspContainer { overflow:hidden; position:relative; }
+/* スクロールバーを除いたエリア */
+.jspPane { position:absolute; }
+/* 縦スクロールバー */
+.jspVerticalBar { position:absolute; top:0; right:0; width:10px; height:100%; }
+/* 横スクロールバー */
+.jspHorizontalBar { position:absolute; bottom:0; left:0; width:100%; height:10px; }
+/* 背景 */
+.jspTrack { background:#111; position:relative; }
+/* ノブ */
+.jspDrag { background:#333; position:relative; top:0; left:0; cursor:pointer; }
+.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag { float:left; height:100%; }
+
 
 // topに戻るボタン
 .back-to-top {
@@ -170,8 +185,8 @@ a.btn-l:hover {
 nav.NavMenu{
     position: fixed; /*表示位置を固定*/
     z-index: 160; /*重ね順を変更*/
-    top: 5%; /*表示位置を指定*/
-    left: 5%; /*表示位置を指定*/
+    top: 12.5%; /*表示位置を指定*/
+    left: 10%; /*表示位置を指定*/
     background: #ffffff;/*背景を白にする*/
     text-align: center; /*テキスト揃え*/
     padding-left: 0px;
@@ -225,7 +240,7 @@ nav.NavMenu.active{
 .Toggle {
     display: block;
     position: fixed;    /* bodyに対しての絶対位置指定 */
-    left: 1%;
+    left: 10%;
     top: 7%;
     width: 42px;
     height: 55px;
@@ -312,10 +327,10 @@ div.logo-img {
 }
 
 .title-text {
-    margin: 22px 0 0 13px;
+    margin: 25px 0 0 13px;
     position: absolute;
     left: 32%;
-    color: #ffffff;
+    color: #111111;
     font-size: 0.9em;
     letter-spacing: 0.2em;
 }
@@ -348,8 +363,8 @@ background-color: #000000;
 }
 
 .video {
-    min-width: 100%;
-    height: 700px;
+    width: 100%;
+    height: 500px;
 }
 
 @keyframes huerotator {
@@ -391,7 +406,7 @@ img.gl-header__menu {
 // navやtitleここまで
 // mainコンテンツここから
 main {
-    width: 100%;
+   width: 100%;
    background: url(
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAG0lEQVQoU2N8//59AwMBwAhSJCgoiFfhqCIGALZlI1fEYv1lAAAAAElFTkSuQmCC
     ) repeat;
@@ -419,32 +434,44 @@ padding: 35px;
 }
 
 section.container__main {
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
     padding: 15px;
     text-align: center;
     display: flex;
 }
 
-div.main_l {
+div.main_l { /* 新着情報 */
     width: 55%;
     margin: 5px;
     background: #ffffff;
     box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
 
-div.main_r {
+div.main_r { /* twitter */
     width: 45%;
     margin: 5px;
     background: #ffffff;
     box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
+    border-top: 20px solid #3AA0D4;
+    border-bottom: 20px solid #3AA0D4;
+    border-radius: 1em;
 }
 
 div.access {
     width: 100%;
-    margin: 15px auto 0 auto;
+    margin: 15px 0 0 0;
+    padding: 20px 0 0 0;
     background: #ffffff;
     box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
+    text-align: left;
+}
+.access > h1 {
+    margin: 0 0 10px 40%;
+}
+.access__text {
+    padding-left: 70px;
+    font-size: 0.8em;
 }
 
 // mainコンテンツここまで
@@ -460,7 +487,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    position: relative;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-weight: none;
