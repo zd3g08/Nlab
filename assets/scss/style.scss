@@ -87,7 +87,7 @@ ul {
 .back-to-top {
     position: fixed;
     right: 1%;
-    bottom: 1.5%;
+    bottom: 3%;
     color: #fff;
     width: 35px;
     height: 35px;
@@ -102,7 +102,7 @@ ul {
     width: 35px;
     height: 35px;
         padding-top: 4px;
-    border-radius: 0px;
+    border-radius: 2em;
     position: absolute;
     left: 0;
     top: 0;
@@ -119,12 +119,14 @@ ul {
     width: 35px;
     height: 35px;
     position: absolute;
+    border-radius: 2em;
     left: 0;
     top: 0;
 }
 
 .back-to-top:hover {
     background: linear-gradient(0deg, #330000 0%, #800000 100%);
+    border-radius: 2em;
     color: #cccccc;
 }
 
@@ -411,15 +413,14 @@ div.logo-img {
     /* ナビゲーションバー */
     display: inline-block;
     position: fixed;
-    top: 24px;
+    top: 0px;
     right: 0px;
     width: 100%;
     height: 110px;
     padding-right: 20px;
     z-index: 40;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255,1);
     text-align: right;
-    box-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff;
 }
 
 section.header__video {
@@ -498,7 +499,7 @@ main {
 }
 
 section.container__main {
-    width: 90%;
+    width: 1100px;
     margin: 0 auto;
     padding: 15px;
     text-align: center;
@@ -523,7 +524,7 @@ div.main_r {
     border-bottom: 20px solid #3AA0D4;
     border-left: 3px solid #3AA0D4;
     border-right: 3px solid #3AA0D4;
-    border-radius: .3em;
+    border-radius: .1em;
 }
 
 // mainコンテンツここまで
@@ -533,7 +534,7 @@ footer {
     width: 100%;
     background:
         url(../images/footer_bg_rogo.png) right bottom no-repeat,
-        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQYV2NMKL/ty4ADMIIkF3SqbsYmP+gkAayXGgfe8HOVAAAAAElFTkSuQmCC) repeat,
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaMK8YYQI6Hwg8kDALudIyIGr+YqAAAAAElFTkSuQmCC) repeat,
         linear-gradient(135deg, #3AA0D4 0%, #076EB2 40%, #222222 100%);
     background-color: rgba(255, 255, 255, 0.9);
     margin-top: auto;
@@ -541,8 +542,10 @@ footer {
     margin-right: auto;
     margin-bottom: 50px;
     color: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: none;
+    letter-spacing: 0.05em;
+    overflow: hidden;
 }
 
 .footer__container {
@@ -550,21 +553,24 @@ footer {
     justify-content: center;
     padding-top: 2%;
     padding-bottom: 0%;
+    min-width: 1000px;
 }
 .footer__container2 {
     display: flex;
     justify-content: center;
     padding-top: 1%;
     padding-bottom: 5%;
+    min-width: 1000px;
+    overflow: auto;
 }
 
 .footer__midasi {
     border: 0;
-    /*線色*/
+    padding: 2px;
     text-align: center;
     margin-bottom: 10px;
-    font-size: 1.1em;
-    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .footer__midasi__text {
@@ -579,63 +585,66 @@ footer {
 
 .footer__midasi__ul {
     padding-left: 0;
-    text-indent: 1.5em;
+    text-indent: 0.4em;
 }
 
-.footer__menu1 {/* 研究メンバー用 */
-    width: 8%;
+.footer__menu1 {/* 研究メンバー用、研究テーマ、研究メンバー用 */
+    min-width: 180px;
     padding: 15px 0 0 0;
     margin-right: 20px;
     font-size: 0.8em;
-    overflow: hidden;
+/*     overflow: hidden; */
+}
+.footer__menu4 {/* セミナー情報、SNS、リンク */
+    min-width: 180px;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 0.8em;
+/*     overflow: hidden; */
 }
 
 .footer__menu2 {/* アクセス */
-    width: 20%;
+    min-width: 200px;
     padding: 15px 0 0 0;
     margin-right: 20px;
     font-size: 0.8em;
-    overflow: hidden;
+/*     overflow: hidden; */
 }
 
 .access__text {
     font-size: 0.9em;
-    text-indent: 1.5em;
     letter-spacing: 0.05em;
+  padding-left: 2em;
+  text-indent: -1em;
     margin: 0;
 }
 
 .footer__menu3 {/* お問い合わせ */
-    width: 20%;
-    padding: 15px 5px 0 0;
+    min-width: 200px;
+    padding: 15px 0 0 0;
     font-size: 0.8em;
-    overflow: hidden;
-    text-align: center;
+/*     overflow: hidden; */
+    text-align: left;
 }
 
-.footer__menu4 {/* リンク */
-    width: 8%;
-    padding: 15px 5px 0 0;
-    font-size: 0.8em;
-    overflow: hidden;
-}
 .google-maps {/* Google map */
-    width: 42.5%;
-    padding-left: 20px;
-    padding-right: 5px;
+    width: 423px;
+}
+.footer__contact__tel {
+    margin: 0 0 3px 0;
 }
 
 span.tel_text {
     font-size: 2em;
     vertical-align: sub;
-    padding: 0px;
-    font-family: 'Lato', sans-serif;
+    padding: 0px 0 0 4px;
+    font-family: 'Loto', sans-serif;
 }
 
 
 .footer__contact {
-    width: 260px;
-    height: 40px;
+    width: 200px;
+    height: 45px;
     border: 0px;
     border-radius: .1em;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJ0lEQVQYV2NkQAP////3ZUQWAwswMm6GC8IEQIrAgsgCYEF0AZAgANP9E1CXVxkjAAAAAElFTkSuQmCC
@@ -657,10 +666,10 @@ span.tel_text {
 }
 
 .footer__contact:hover {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJ0lEQVQYV2NkQAP////3ZUQWAwswMm6GC8IEQIrAgsgCYEF0AZAgANP9E1CXVxkjAAAAAElFTkSuQmCC
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAJ0lEQVQYV2NkQAP///83ZkQWAwswMp6FC8IEQIrAgsgCYEF0AZAgAMm7EzYrqtIZAAAAAElFTkSuQmCC
 ) repeat,
-        #990000;
-        color: #cccccc;
+        #cc0000;
+        color: #eeeeee;
     -webkit-transition: .1s ease-in-out;
     /*変化の速度を指定*/
     -moz-transition: .1s ease-in-out;
@@ -671,41 +680,24 @@ span.tel_text {
 
 .footer__contact__text {
     margin-top: 10px;
-    margin-bottom: 0px;
-
+    margin-bottom: 0px
 }
 
 .footer__copyright {
     position: absolute;
-    display: flex;
     width: 100%;
     height: 60px;
     background-color: #000000;
-    font-size: 0.7em;
+    font-size: 0.8em;
     color: #ffffff;
     position: absolute;
     bottom: 0;
-    line-height: 5.5em;
+    line-height: 5em;
     letter-spacing: .1em;
     // font-family: 'Lato', sans-serif;
     overflow: hidden;
+    text-align: center;
 }
-
-.footer__copyright_l {
-    width: 50%;
-    position: relative;
-    left: 3.5%;
-    text-align: left;
-    letter-spacing: 0.1em;
-}
-
-.footer__copyright_r {
-    width: 50%;
-    position: relative;
-    right: 3.5%;
-    text-align: right;
-}
-
 .footer__text {
     text-align: left;
     color: #ffffff;
