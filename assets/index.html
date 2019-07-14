@@ -6,81 +6,45 @@
     <title>千葉大学 中口研究室 | Nakaguchi Lab. in Chiba Univ.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" /> -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 </head>
 
 <body>
     <div id="wapper">
-        <a href="#" class="back-to-top"></a>
+        <!-- footerを最下部に固定 -->
+        <a href="#" class="back-to-top"></a><!-- topに戻るボタン -->
         <header>
-            <!-- ナビメニュー部分 -->
-            <nav class="NavMenu">
-                <ul>
-                    <li><a href="#">研究室について</a></li>
-                    <li><a href="#">研究テーマ</a></li>
-                    <li><a href="#">最新情報</a></li>
-                    <li><a href="#">セミナー情報</a></li>
-                    <li><a href="#">アクセス</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
-                    <li><a href="#">研究メンバー用</a></li>
-                </ul>
-            </nav>
-            <!-- ハンバーガーメニュー部分 -->
-            <div class="Toggle">
-                <h6 class="Toggle_menu">MENU</h6>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="logo-img">
-                <span class="title-text">千葉大学フロンティア医工学センター</span>
-                <img src="images/title_logo.png" alt="Nlabタイトルロゴ">
-            </div><!-- タイトルロゴここまで -->
-            <div class="nav-right">
-                <p class="fsz">
-                    <a href="#" class="btn-s">小</a>
-                    <a href="#" class="btn-m">中</a>
-                    <a href="#" class="btn-l">大</a>
-                </p>
-                <span class="fsz-font">文字サイズ</span>
-                <div class="google_translate" id="google_translate_element"></div>
+            <!-- ナビゲーションメニューここから -->
+            <nav class="nav_container">
+                <div class="nav__img">
+                    <img class="nav__logo" src="images/logo.png" alt="中口ラボのロゴ">
+                </div>
+                <div class="nav__menu">
+                    <ul>
+                        <li><a href="#.html">研究室について</a></li>
+                        <li><a href="#.html">研究テーマ</a></li>
+                        <li><a href="#.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="font-size-btn">
+                    <p class="fsz">
+                       <h6 class="fsz-font">文字サイズ</h6>
+                        <a href="#" class="btn-s">小</a>
+                        <a href="#" class="btn-m">中</a>
+                        <a href="#" class="btn-l">大</a>
+                    </p>
+                </div>
+                                <div class="google_translate" id="google_translate_element"></div>
                 <script type="text/javascript">
                 function googleTranslateElementInit() {
                     new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
                 }
                 </script>
                 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            </div>
-            <section class="header__video">
-                <video class="video" src="images/sample_movie.mp4" autoplay loop>
-                    <p>動画を再生するにはvideoタグをサポートしたブラウザが必要です。</p>
-                </video>
-            </section>
+                </div>
+            </nav><!-- ナビゲーションメニューここまで -->
         </header>
-        <section class="container">
-            <div class="research_theme">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <h2>研究テーマ</h2>
-                <img class="research_theme__img" src="images/12.png" alt="研究１">
-                <rect width="100%" height="100%" fill="#55595c" />
-                <p class="card-text">This is a wider card</p>
-            </div>
-        </section>
         <main>
             <!-- mainコンテンツここから -->
             <section class="container__main">
@@ -92,7 +56,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur fugit, sequi quos excepturi explicabo inventore quod error aliquam totam magni, voluptatum, eaque dolores asperiores laudantium tempora temporibus aspernatur non.</p>
                 </div>
                 <div class="main_r">
-                    <a class="twitter-timeline" href="https://twitter.com/gucchi1048" width="600px" height="600px" data-chrome="no header nofooter noborders transparent">Tweets by gucchi1048</a>
+                    <a class="twitter-timeline" href="https://twitter.com/gucchi1048" width="600px" height="300px" data-chrome="no header nofooter noborders transparent">Tweets by gucchi1048</a>
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </section>
@@ -190,17 +154,17 @@
 $(function() {
     // 小ボタンクリック
     $('.btn-s').click(function() {
-        $("p").css('font-size', '0.88rem');
+        $("main p").css('font-size', '0.88rem');
     });
 
     // 中ボタンクリック
     $('.btn-m').click(function() {
-        $("p").css('font-size', '1rem');
+        $("main p").css('font-size', '1rem');
     });
 
     // 大ボタンクリック
     $('.btn-l').click(function() {
-        $("p").css('font-size', '1.15rem');
+        $("main p").css('font-size', '1.15rem');
     });
 
 });
