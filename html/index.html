@@ -11,144 +11,261 @@
 </head>
 
 <body>
+<div class="headerRight">
+  <div class="dotImg"></div>
+    <video src="images/bokeh-H264 75.mov" autoplay loop muted></video>
+  </video>
+</div>
     <div id="wapper">
         <!-- footerを最下部に固定 -->
         <a href="#" class="back-to-top"></a><!-- topに戻るボタン -->
-            <!-- ナビゲーションメニューここから -->
-            <nav class="nav_container">
-                <div class="nav__img">
-                    <img class="nav__logo" src="images/logo.png" alt="中口ラボのロゴ">
-                </div>
-                <div class="nav__menu">
-                    <ul>
-                        <li><a href="#.html">研究室について</a></li>
-                        <li><a href="#.html">研究テーマ</a></li>
-                        <li><a href="#.html">お問い合わせ</a></li>
-                    </ul>
-                </div>
-                <div class="font-size-btn">
-                    <p class="fsz">
-                       <h6 class="fsz-font">文字サイズ</h6>
-                        <a href="#" class="btn-s">小</a>
-                        <a href="#" class="btn-m">中</a>
-                        <a href="#" class="btn-l">大</a>
-                    </p>
-                </div>
-                                <div class="google_translate" id="google_translate_element"></div>
-                <script type="text/javascript">
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
-                }
-                </script>
-                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                </div>
-            </nav><!-- ナビゲーションメニューここまで -->
-            <section class="nav_pankuzu"><!-- パンくずリストここから -->
-<!--                 <div class="nav_pankuzu__menu">
+        <!-- ナビゲーションメニューここから -->
+        <nav class="nav_container">
+            <div class="nav__img">
+                <img class="nav__logo" src="images/nav_logo.png" alt="中口ラボのロゴ" width="230">
+            </div>
+            <div class="nav__menu">
+                <ul>
+                    <li><a href="#.html">研究室について</a></li>
+                    <li><a href="#.html">研究テーマ</a></li>
+                    <li><a href="#.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="font-size-btn">
+                <p class="fsz">
+                    <h6 class="fsz-font">文字サイズ</h6>
+                    <a href="#" class="btn-s">小</a>
+                    <a href="#" class="btn-m">中</a>
+                    <a href="#" class="btn-l">大</a>
+                </p>
+            </div>
+            <div class="google_translate" id="google_translate_element"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    </nav><!-- ナビゲーションメニューここまで -->
+    <section class="nav_pankuzu">
+        <!-- パンくずリストここから -->
+        <!--                 <div class="nav_pankuzu__menu">
         <a href="#.html">研究室について</a>＞<a href="#.html">研究テーマ</a><a href="#.html">お問い合わせ</a>
 </div> -->
-            </section><!-- パンくずリストここまで -->
-        <header>
-       </header>
-        <main>
-            <!-- mainコンテンツここから -->
-            <section class="container__main">
-                <div class="main_l">
-                    <h1>新着情報</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis tempore maxime incidunt deserunt, ipsum pariatur, accusamus animi quidem velit tenetur eum nesciunt quos veniam architecto neque impedit! Sed, accusamus.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis aspernatur repellendus, esse illum suscipit nihil, minima beatae quaerat labore nisi fugit, officiis dignissimos saepe ab facilis qui non quas!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non maiores, aliquid corporis officiis sit vero odit sunt nobis natus vitae ex doloribus facilis placeat, doloremque, quam rerum! Ab sint, adipisci!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae tenetur fugit, sequi quos excepturi explicabo inventore quod error aliquam totam magni, voluptatum, eaque dolores asperiores laudantium tempora temporibus aspernatur non.</p>
-                </div>
-                <div class="main_r">
-                    <a class="twitter-timeline" href="https://twitter.com/gucchi1048" width="600px" height="300px" data-chrome="no header nofooter noborders transparent">Tweets by gucchi1048</a>
-                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-            </section>
-            <!--             <section class="container">
-            </section> -->
-        </main><!-- mainコンテンツここまで -->
-        <footer>
-            <section class="footer__container">
-                <div class="footer__menu1">
-                    <p class="footer__midasi"><span class="footer__midasi__text">研究室について</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;新着情報</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;スタッフ一覧</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-graduation-cap"></i>&nbsp;学生・卒業生</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-trophy"></i>&nbsp;&nbsp;業績</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-camera"></i>&nbsp;&nbsp;イベントアルバム</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu1">
-                    <p class="footer__midasi"><span class="footer__midasi__text">研究テーマ</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-medkit"></i>&nbsp;&nbsp;治療支援</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-heartbeat"></i>&nbsp;&nbsp;医療訓練システム</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-smile-o"></i>&nbsp;&nbsp;舌画像の計測・解析</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;画像診断支援</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu1">
-                    <p class="footer__midasi"><span class="footer__midasi__text">研究メンバー用</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-search"></i>&nbsp;&nbsp;蔵書DB</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-bitbucket"></i>&nbsp;&nbsp;Git</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-pencil-square"></i>&nbsp;&nbsp;Moodle</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu2">
-                    <p class="footer__midasi"><span class="footer__midasi__text">アクセス</span></p>
-                    <p class="access__text">
-                        〒&nbsp;263-8522<br>
-                        千葉市稲毛区弥生町&nbsp;1-33<br>
-                        千葉大学 西千葉キャンパス<br>
-                        フロンティア医工学センター<br>
-                        (CFME)&nbsp;A棟 2階<br>
-                        <i class="fa fa-subway" aria-hidden="true"></i>&nbsp;JR&nbsp;西千葉駅から徒歩約&nbsp;8&nbsp;分<br><br>
-                        <a class="footer__text" href="https://goo.gl/maps/mHtnEFfH4kwZ7vhJ8" target="_blanc"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Google&nbsp;map&nbsp;で開く</a>
-                    </p>
-                </div>
-                <div class="footer__menu3">
-                    <p class="footer__midasi"><span class="footer__midasi__text">お問い合わせ</span></p>
-                    <p class="footer__contact__tel"><i class="fa fa-phone"></i>&nbsp;TEL&nbsp;/&nbsp;FAX&nbsp;&nbsp;(&nbsp;直通&nbsp;)<br><span class="tel_text">043-290-3296</span></p>
-                    <a class="footer__text" href="#">
-                        <div class="footer__contact">お問い合わせフォーム&nbsp;&nbsp;<i class="fa fa-envelope fa-1x" aria-hidden="true"></i></div>
-                    </a>
-                </div>
-            </section>
-            <section class="footer__container2">
-                <div class="footer__menu4">
-                    <p class="footer__midasi"><span class="footer__midasi__text">セミナー情報</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-cube"></i>&nbsp;中口研ゼミについて</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-comments"></i>&nbsp;'19年度前期専門ゼミ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu4">
-                    <p class="footer__midasi"><span class="footer__midasi__text">SNS</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;Faebook</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu4">
-                    <p class="footer__midasi"><span class="footer__midasi__text">リンク</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-university"></i>&nbsp;&nbsp;千葉大学関係</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;学会</a></li>
-                    </ul>
-                </div>
-                <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.935819006356!2d140.0990303!3d35.6293087!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x6022849d37769a21%3A0x516c5457385267fe!2z44CSMjYzLTAwMjIg5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy65byl55Sf55S677yR4oiS77yT77yT!5e0!3m2!1sja!2sjp!4v1562647007995!5m2!1sja!2sjp" width="100%" height="180px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </section>
-        </footer>
-        <div class="footer__copyright">
-            <small>Copyright: Nakaguchi Lab. Chiba Univ. 2011 All rights reserved.</small>
+    </section><!-- パンくずリストここまで -->
+    <header>
+        <div class="bluelight">
+            <a href="#"><img src="images/footer_bg_rogo.png" alt="" width="100"></a>
         </div>
+        <section class="container">
+            <div class="reseach__img">
+            </div>
+        </section>
+    </header>
+    </div>
+    <main>
+        <!-- mainコンテンツここから -->
+        <section class="container__main">
+            <div class="main_l">
+                    <h4>新着情報</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut debitis assumenda harum ipsam sint, magni, laboriosam quia excepturi similique reiciendis ea unde cumque numquam voluptatem minus est non soluta!</p>
+            </div>
+            <div class="main_r">
+                <a class="twitter-timeline" href="https://twitter.com/gucchi1048" width="400px" height="350px" data-chrome="no header nofooter noborders transparent">Tweets by gucchi1048</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+            <section class="container">
+            <div class="main_reseach">
+                <div class="site__wrapper">
+                                        <h4>研究テーマ</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut debitis assumenda harum ipsam sint, magni, laboriosam quia excepturi similique reiciendis ea unde cumque numquam voluptatem minus est non soluta!</p>
+                    <div class="grid">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="https://unsplash.it/400/608?image=123" alt="">
+                                <div class="card__overlay card__overlay--indigo">
+                                    <div class="card__overlay-content">
+                                        <ul class="card__meta">
+                                            <li><a href="#0"><i class="fa fa-tag"></i> Html5/Css3</a></li>
+                                            <li><a href="#0"><i class="fa fa-clock-o"></i> 2 min ago</a></li>
+                                        </ul>
+                                        <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+                                        <ul class="card__meta card__meta--last">
+                                            <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                                            <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="https://unsplash.it/400/300?image=100" alt="">
+                                <div class="card__overlay card__overlay--blue">
+                                    <div class="card__overlay-content">
+                                        <ul class="card__meta">
+                                            <li><a href="#0"><i class="fa fa-tag"></i> UI/UX</a></li>
+                                            <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                                        </ul>
+                                        <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+                                        <ul class="card__meta card__meta--last">
+                                            <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                                            <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="https://unsplash.it/400/300?image=200" alt="">
+                                <div class="card__overlay card__overlay--indigo">
+                                    <div class="card__overlay-content">
+                                        <ul class="card__meta">
+                                            <li><a href="#0"><i class="fa fa-tag"></i> UI/UX</a></li>
+                                            <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                                        </ul>
+                                        <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+                                        <ul class="card__meta card__meta--last">
+                                            <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                                            <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="https://unsplash.it/400/300?image=300" alt="">
+                                <div class="card__overlay card__overlay--indigo">
+                                    <div class="card__overlay-content">
+                                        <ul class="card__meta">
+                                            <li><a href="#0"><i class="fa fa-tag"></i> Tutorials</a></li>
+                                            <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                                        </ul>
+                                        <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+                                        <ul class="card__meta card__meta--last">
+                                            <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                                            <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <div class="card__image">
+                                <img src="https://unsplash.it/400/300?image=400" alt="">
+                                <div class="card__overlay card__overlay--blue">
+                                    <div class="card__overlay-content">
+                                        <ul class="card__meta">
+                                            <li><a href="#0"><i class="fa fa-tag"></i> Tutorials</a></li>
+                                            <li><a href="#0"><i class="fa fa-clock-o"></i> 2 days ago</a></li>
+                                        </ul>
+                                        <a href="#0" class="card__title">How to create a card based article with HTML5 &amp; CSS3</a>
+                                        <ul class="card__meta card__meta--last">
+                                            <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
+                                            <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- @end site__wrapper -->
+</div>
+            </section>
+    </main><!-- mainコンテンツここまで -->
+    <footer>
+        <section class="footer__container">
+            <div class="footer__menu1">
+                <p class="footer__midasi"><span class="footer__midasi__text">研究室について</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;新着情報</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;スタッフ一覧</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-graduation-cap"></i>&nbsp;学生・卒業生</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-trophy"></i>&nbsp;&nbsp;業績</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-camera"></i>&nbsp;&nbsp;イベントアルバム</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu1">
+                <p class="footer__midasi"><span class="footer__midasi__text">研究テーマ</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-medkit"></i>&nbsp;&nbsp;治療支援</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-heartbeat"></i>&nbsp;&nbsp;医療訓練システム</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-smile-o"></i>&nbsp;&nbsp;舌画像の計測・解析</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;画像診断支援</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu1">
+                <p class="footer__midasi"><span class="footer__midasi__text">研究メンバー用</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-search"></i>&nbsp;&nbsp;蔵書DB</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-bitbucket"></i>&nbsp;&nbsp;Git</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-pencil-square"></i>&nbsp;&nbsp;Moodle</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu2">
+                <p class="footer__midasi"><span class="footer__midasi__text">アクセス</span></p>
+                <p class="access__text">
+                    〒&nbsp;263-8522<br>
+                    千葉市稲毛区弥生町&nbsp;1-33<br>
+                    千葉大学 西千葉キャンパス<br>
+                    フロンティア医工学センター<br>
+                    (CFME)&nbsp;A棟 2階<br>
+                    <i class="fa fa-subway" aria-hidden="true"></i>&nbsp;JR&nbsp;西千葉駅から徒歩約&nbsp;8&nbsp;分<br><br>
+                    <a class="footer__text" href="https://goo.gl/maps/mHtnEFfH4kwZ7vhJ8" target="_blanc"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Google&nbsp;map&nbsp;で開く</a>
+                </p>
+            </div>
+            <div class="footer__menu3">
+                <p class="footer__midasi"><span class="footer__midasi__text">お問い合わせ</span></p>
+                <p class="footer__contact__tel"><i class="fa fa-phone"></i>&nbsp;TEL&nbsp;/&nbsp;FAX&nbsp;&nbsp;(&nbsp;直通&nbsp;)<br><span class="tel_text">043-290-3296</span></p>
+                <a class="footer__text" href="#">
+                    <div class="footer__contact">お問い合わせフォーム&nbsp;&nbsp;<i class="fa fa-envelope fa-1x" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </section>
+        <section class="footer__container2">
+            <div class="footer__menu4">
+                <p class="footer__midasi"><span class="footer__midasi__text">セミナー情報</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-cube"></i>&nbsp;中口研ゼミについて</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-comments"></i>&nbsp;'19年度前期専門ゼミ</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu4">
+                <p class="footer__midasi"><span class="footer__midasi__text">SNS</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;Faebook</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu4">
+                <p class="footer__midasi"><span class="footer__midasi__text">リンク</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-university"></i>&nbsp;&nbsp;千葉大学関係</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;学会</a></li>
+                </ul>
+            </div>
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.935819006356!2d140.0990303!3d35.6293087!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x6022849d37769a21%3A0x516c5457385267fe!2z44CSMjYzLTAwMjIg5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy65byl55Sf55S677yR4oiS77yT77yT!5e0!3m2!1sja!2sjp!4v1562647007995!5m2!1sja!2sjp" width="100%" height="180px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
+    </footer>
+    <div class="footer__copyright">
+        <small>Copyright: Nakaguchi Lab. Chiba Univ. 2011 All rights reserved.</small>
+    </div>
 </body>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="js/holder.min.js"></script>
@@ -201,6 +318,14 @@ $(function() {
         }
     });
 });
+</script>
+<script>
+/* Demo purposes only */
+$(".hover").mouseleave(
+    function() {
+        $(this).removeClass("hover");
+    }
+);
 </script>
 
 </html>
