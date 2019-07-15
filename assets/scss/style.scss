@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 @import "bootstrap";
 
 // 全体
@@ -26,12 +27,6 @@ body,
     flex-direction: column;
     min-height: 100vh;
     overflow: auto;
-}
-
-.container {
-    width: 1100px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 ul {
@@ -88,130 +83,60 @@ ul {
 
 video {
     position: fixed;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
     left: 0;
     top: 0px;
     z-index: 0;
 }
 
 .headerRight video {
-  width: 100%;
-  filter: grayscale(1%);
-  z-index: 0;
-}
-
-.headerRight .dotImg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAR0lEQVQoU2NkwATGUKGzyFKMaOpAimAKkNkMyApRJKAGwMVgCrEpglkGlgMpxKcIrpgkhSBdRFmN4hZcoUBW8CCbDGKjBDgA+14QcVTRVtUAAAAASUVORK5CYII=") repeat;
-  z-index: 1;
+    min-width: 100%;
+    filter: grayscale(1%);
+    z-index: 0;
 }
 
 // 全体ここまで
 
 // navやtitleここから
-.title-text {
-    margin: 25px 0 0 13px;
-    position: absolute;
-    left: 32%;
-    color: #111111;
-    font-size: 0.9em;
-    letter-spacing: 0.2em;
-}
 
-header {
-    /* ナビゲーションバー */
-    display: fixed;
+// パンくずリストここから
+.nav_pankuzu {
+    display: inline-block;
     position: absolute;
     width: 100%;
-    top: 45px;
-    right: 0px;
-    height: 500px;
-    z-index: 0;
-    // background: url("../images/header_bg.jpg") center top no-repeat;
-}
-
-nav {
-    display: fixed;
-    position: relative;
-    width: 100%;
-    height: 45px;
+    height: 40px;
     top: 0px;
     right: 0px;
     z-index: 50;
-}
-.nav_container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    z-index: 60;
+    text-align: center;
 }
 
-.nav__img {
-    width: 230px;
-    padding-top: 10px;
-    margin-right: 5px;
-    margin-left: 20px;
-    z-index: 2;
-}
+/* Google翻訳ここから */
+.google_translate {
+    width: 150px;
+    height: 40px;
+    padding: 7px 0;
+    margin-right: 2%;
+    float: right;
+        background: rgba(#fff, 0.5);
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
 
-.nav__logo {
-      z-index: 20;
 }
+/* google翻訳ここまで */
 
-.nav__menu {
-    /* ナビゲーションメニュー */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 540px;
-    background-color: #ffffff;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-
-.nav__menu ul {
-    margin: 0;
-    padding: 0;
-}
-
-.nav__menu li {
-    display: inline-block;
-    background: #FFF;
-    font-size: 0.9em;
-    margin-right: 30px;
-    margin-top: 17px;
-}
-
-.nav__menu li:last-child {
-    margin-right: 0px;
-}
-
-.nav__menu a {
-text-decoration: none;
-color: #111111;
-    -webkit-transition: .1s ease-in-out;
-    /*変化の速度を指定*/
-    -moz-transition: .1s ease-in-out;
-    /*変化の速度を指定*/
-    transition: .1s ease-in-out;
-    /*変化の速度を指定*/
-}
-
-.nav__menu a:hover {
-    color: #3aa0d4;
-}
-
-/* 文字サイズの変更ボタン */javascript:void(0)
+/* 文字サイズの変更ボタン */
 .font-size-btn {
     display: inline-block;
-    width: 170px;
-    background-color: #ffffff;
-    margin-top: 12px;
-    margin-bottom: 25px;
+    width: 150px;
+    height: 40px;
+    padding: 0 0 15px 0;
+    background-color: rgba(#fff, 0.5);
+    border-bottom-left-radius: .2em;
+    border-bottom-right-radius: .2em;
+    float: right;
+    margin-right: 5px;
 }
 
 .fsz {
@@ -221,14 +146,12 @@ color: #111111;
 h6.fsz-font {
     font-size: 0.8em;
     padding: 0;
-    margin-top: 20px;
-    margin-right: 5px;
-    margin-left: 4px;
+    margin-top: 14px;
+    margin-left: 5px;
     vertical-align: middle;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
     color: #111111;
-    background-color: #fff;
     float: left;
 }
 
@@ -237,39 +160,38 @@ h6.fsz-font {
 .btn-l {
     font-size: 0.8em;
     position: relative;
-    padding: 0 2px;
-    top: 15px;
+    padding: 0 3px;
+    top: 10px;
     text-decoration: none;
     background: #ffffff;
     color: #111111;
     font-weight: bold;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    clear: both;
-    border: 1px solid #cccccc;
+    border: 1px solid #3aa0d4;
 }
 
 .btn-s:hover {
-    background: #cccccc;
+    background: #3aa0d4;
 }
 
 .btn-s:active {
-    background: #cccccc;
+    background: #3aa0d4;
 }
 
 .btn-m:hover {
-    background: #cccccc;
+    background: #3aa0d4;
 }
 
 .btn-m:active {
-    background: #cccccc;
+    background: #3aa0d4;
 }
 
 .btn-l:hover {
-    background: #cccccc;
+    background: #3aa0d4;
 }
 
 .btn-l:active {
-    background: #cccccc;
+    background: #3aa0d4;
 }
 
 a.btn-s,
@@ -292,50 +214,136 @@ a.btn-l:hover {
 
 //* 文字サイズ変更ボタンここまで */
 
-/* Google翻訳ここから */
-.google_translate {
-    margin-top: 15px;
-    margin-left: 10px;
-    width: 140px;
-    float: right;
+
+//メニューボタンここから
+
+
+//colors
+$red: #E1332D;
+$white: #fff;
+
+//base styles
+
+* {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
 }
 
-/* google翻訳ここまで */
+// Main wrap
+.buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
 
-// パンくずリストここから
-.nav_pankuzu {
+//button styles
+//default button
+.btn {
+    color: #fff;
+    cursor: pointer;
+    // display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    @media(min-width: 600px) {
+        margin: 0 1em 2em;
+    }
+
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        transition: all 280ms ease-in-out;
+    }
+
+}
+.btn-2 {
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+    letter-spacing: 2px;
+        text-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
+    }
+
+.btn-2:after,
+.btn-2:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(#fff, 0);
+    bottom: 0px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+    backface-visibility: hidden;
+    border-color: #fff;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+.btn-2:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 70%;
+
+}
+
+//メニューボタンここまで
+
+header {
+    /* ナビゲーションバー */
     display: fixed;
     position: absolute;
     width: 100%;
-    height: 30px;
     top: 45px;
     right: 0px;
-    z-index: 50;
-    background: #000000;
+    height: 500px;
+    z-index: 0;
 }
-/* .nav_pankuzu__menu {
-    display: flex;
-    position: relative;
-    width: 700px;
-    height: 30px;
-    margin: 0 auto;
-    top: 0;
-    left: 150px;
-    z-index: 50;
-    background: #ffffff;
-    opacity: .3;
-} */
-// パンくずリストここまで
 
-// header内animationここから
+.header__title {
+    width: 600px;
+    height: 600px;
+    background: url("../images/title_logo1.png") 100px 200px no-repeat;
+    opacity: .6;
+    display: block;
+    text-indent: -9999px;
+
+}
+
+.header__title:hover {
+    background: url("../images/title_logo2.png") no-repeat;
+    background-position: 45px bottom;
+    opacity: 1;
+}
+
+// マウスホバーで光るanimationボタン
 .bluelight {
     display: table;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 20%;
+    top: 30%;
     transform: translate(-50%, -50%);
+
     a {
         display: table-cell;
         font-size: 3em;
@@ -345,17 +353,22 @@ a.btn-l:hover {
         border-radius: 50%;
         transition: background 1s, border-width 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000), text-shadow 0.5s;
         color: #daf6ff;
-        text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
-        box-shadow: 0 0 0 rgba(10, 175, 230, 0),  inset 0 0 0 rgba(10, 175, 230, 0);
+        text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+        box-shadow: 0 0 0 rgba(10, 175, 230, 0), inset 0 0 0 rgba(10, 175, 230, 0);
         background-image: radial-gradient(center, ellipse cover, rgba(10, 175, 230, 0) 0%, rgba(10, 175, 230, 0) 90%);
         border: 0 dotted rgba(10, 175, 230, 0.0);
+
         &:hover {
             color: #fff;
-            text-shadow: 0 0 50px rgba(10, 175, 230, 1),  0 0 50px rgba(10, 175, 230, 1);
+            text-shadow: 0 0 50px rgba(10, 175, 230, 1), 0 0 50px rgba(10, 175, 230, 1);
             background-image: radial-gradient(center, ellipse cover, rgba(10, 175, 230, 0.3) 0%, rgba(10, 175, 230, 0) 60%);
         }
     }
-    &:before, &:after, a:before, a:after {
+
+    &:before,
+    &:after,
+    a:before,
+    a:after {
         transition: 0.2s ease-in-out;
         content: "";
         display: block;
@@ -364,8 +377,9 @@ a.btn-l:hover {
         border: 60px dashed transparent;
         left: 50%;
         top: 50%;
-        transform : translate(-50%,-50%);
+        transform: translate(-50%, -50%);
     }
+
     &:before {
         animation: rotate 20s linear 0s infinite;
         width: 180%;
@@ -373,6 +387,7 @@ a.btn-l:hover {
         border: 3px dotted rgba(10, 175, 230, 0);
         z-index: -1;
     }
+
     &:after {
         animation: rotate 10s linear 0s infinite reverse;
         border: 80px dashed rgba(10, 175, 230, 0);
@@ -380,6 +395,7 @@ a.btn-l:hover {
         height: 160%;
         z-index: -2;
     }
+
     a {
         &:before {
             animation: rotate 5s ease-in-out 0s infinite alternate;
@@ -387,6 +403,7 @@ a.btn-l:hover {
             height: 120%;
             border: 50px dashed rgba(10, 175, 230, 0);
         }
+
         &:after {
             animation: rotate 5s linear 0s infinite;
             border: 18px dashed rgba(10, 175, 230, 0);
@@ -394,118 +411,104 @@ a.btn-l:hover {
             height: 120%;
         }
     }
+
     &:hover {
         &:before {
             border-color: rgba(10, 175, 230, 0.3);
         }
+
         &:after {
             border-color: rgba(10, 175, 230, 0.1);
         }
+
         a {
             &:before {
                 border-color: rgba(10, 175, 230, 0.3);
             }
+
             &:after {
                 border-color: rgba(10, 175, 230, 0.3);
             }
         }
     }
 }
+
 @keyframes rotate {
     0% {
-        transform: translate(-50%,-50%) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
-        transform: translate(-50%,-50%) rotate(360deg);
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-p.caption {
-    font-size: 0.7em;
-    text-align: center;
-    position: fixed;
+
+// マウスホバーで光るanimationボタン
+
+//新着情報ここから
+section.container__new {
+    position: relative;
+    top: 600px;
     width: 100%;
-    bottom: 0;
-    letter-spacing: 0.2em;
-    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    z-index: 100;
+    background-color: #000000;
+}
+
+div.main_new {
+    width: 65%;
+    height: 200px;
+    margin-right: 15px;
+    background: rgba(0, 0, 0, 0.7);
     color: #ffffff;
 }
-// header内animationここまで
 
-.reseach__img {
-    margin-top: 330px;
-}
-
-//研究テーマanimation02ここから
-
-//研究テーマanimation02ここまで
-
+//新着情報ここまで
 
 // navやtitleここまで
+
 // mainコンテンツここから
 main {
     width: 100%;
-    margin-top: 500px;
+    margin-top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0 0px 0;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAG0lEQVQoU2N8//59AwMBwAhSJCgoiFfhqCIGALZlI1fEYv1lAAAAAElFTkSuQmCC
 ) repeat,
-        rgba(255, 255, 255, 0.85);
-    padding: 5px 0 20px 0;
+        rgba(255, 255, 255, 0.7);
     z-index: 50;
 }
 
-.research_theme {
-    /* 研究テーマ */
-    display: inline-block;
-    position: absolute;
-    top: 170px;
-    left: 10%;
-    width: 80%;
-    margin: 0 auto;
-    height: 320px;
-    background-color: rgba(255, 255, 255, .5);
-    z-index: 40;
-    text-align: center;
-    box-shadow: 0 0 5px #ffffff, 0 0 2px #ffffff, 0 0 1px #ffffff;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
-.research_theme__img {
-    width: 155px;
-    height: 120px;
-}
-
-section.container__main {
-    width: 1100px;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: center;
+section.container {
+    min-width: 1100px;
     display: flex;
-}
-
-div.main_l {
-    /* 新着情報 */
-    width: 70%;
-    margin-right: 15px;
-    background: #ffffff;
-    box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
-}
-
-div.main_r {
-    /* twitter */
-    width: 30%;
-    margin: 0;
-    background: #ffffff;
-    box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
-    border-radius: .1em;
+    justify-content: center;
+    text-align: center;
 }
 
 div.main_reseach {
     /* 研究テーマ */
-    width: 100%;
+    width: 750px;
+    height: 800px;
+    margin: 0;
+    padding: 20px;
+    background: #ffffff;
+    // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
+}
+
+div.main_twitter {
+    /* twitter */
+    width: 320px;
     margin: 0;
     background: #ffffff;
-    box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
-    border-radius: .1em;
+    // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
+
+
 
 //Cardここから
 
@@ -518,10 +521,12 @@ $body-font-family: "Lato";
 $header-font-family: "Montserrat";
 
 // Basic Styles for Demo
-*,*:after,*:before {
+*,
+*:after,
+*:before {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -543,6 +548,7 @@ $header-font-family: "Montserrat";
     padding-left: 0.2em;
     padding-right: 0.2em;
     padding-bottom: 0.4em;
+
     @media screen and (min-width: 40.063em) {
         float: left;
         width: 33.333%;
@@ -550,36 +556,34 @@ $header-font-family: "Montserrat";
 }
 
 // Card Article
-.card {
-
-}
+.card {}
 
 .card__image {
     -webkit-border-radius: 3px;
-       -moz-border-radius: 3px;
-            border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     display: block;
     min-height: 240px;
     overflow: hidden;
     position: relative;
 
-    > img {
+    >img {
         display: block;
         margin-bottom: 0;
 
         -webkit-transition: all .25s ease-in-out;
-           -moz-transition: all .25s ease-in-out;
-            -ms-transition: all .25s ease-in-out;
-             -o-transition: all .25s ease-in-out;
-                transition: all .25s ease-in-out;
+        -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+        -o-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
     }
 
-    &:hover > img {
+    &:hover>img {
         -webkit-transform: scale(1.2);
-           -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-             -o-transform: scale(1.2);
-                transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
     }
 }
 
@@ -594,8 +598,8 @@ $header-font-family: "Montserrat";
     text-decoration: none;
 
     -webkit-transition: all 0.3s ease-out;
-       -moz-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 
     &:hover {
         color: rgba(white, 0.7);
@@ -661,7 +665,7 @@ $header-font-family: "Montserrat";
             right: -0.6em;
         }
 
-        > a {
+        >a {
             color: #f8f8f8;
         }
     }
@@ -679,7 +683,7 @@ footer {
         url(../images/footer_bg_rogo.png) right bottom no-repeat,
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaMK8YYQI6Hwg8kDALudIyIGr+YqAAAAAElFTkSuQmCC) repeat,
         linear-gradient(135deg, #3AA0D4 0%, #076EB2 40%, #222222 100%);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     margin-bottom: 50px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;

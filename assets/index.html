@@ -11,26 +11,24 @@
 </head>
 
 <body>
-<div class="headerRight">
-  <div class="dotImg"></div>
-    <video src="images/bokeh-H264 75.mov" autoplay loop muted></video>
-  </video>
-</div>
+    <div class="headerRight">
+        <div class="dotImg"></div>
+        <video src="images/bokeh-H264 75.mov" autoplay loop muted></video>
+        </video>
+    </div>
     <div id="wapper">
         <!-- footerを最下部に固定 -->
         <a href="#" class="back-to-top"></a><!-- topに戻るボタン -->
         <!-- ナビゲーションメニューここから -->
-        <nav class="nav_container">
-            <div class="nav__img">
-                <img class="nav__logo" src="images/nav_logo.png" alt="中口ラボのロゴ" width="230">
-            </div>
-            <div class="nav__menu">
-                <ul>
-                    <li><a href="#.html">研究室について</a></li>
-                    <li><a href="#.html">研究テーマ</a></li>
-                    <li><a href="#.html">お問い合わせ</a></li>
-                </ul>
-            </div>
+        <section class="nav_pankuzu">
+
+            <div class="google_translate" id="google_translate_element"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
+            }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             <div class="font-size-btn">
                 <p class="fsz">
                     <h6 class="fsz-font">文字サイズ</h6>
@@ -39,47 +37,32 @@
                     <a href="#" class="btn-l">大</a>
                 </p>
             </div>
-            <div class="google_translate" id="google_translate_element"></div>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
-            }
-            </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </div>
-    </nav><!-- ナビゲーションメニューここまで -->
-    <section class="nav_pankuzu">
-        <!-- パンくずリストここから -->
-        <!--                 <div class="nav_pankuzu__menu">
-        <a href="#.html">研究室について</a>＞<a href="#.html">研究テーマ</a><a href="#.html">お問い合わせ</a>
-</div> -->
+
+        </div>
     </section><!-- パンくずリストここまで -->
     <header>
         <div class="bluelight">
-            <a href="#"><img src="images/footer_bg_rogo.png" alt="" width="100"></a>
+            <a class="header__title" href="#">aaa</a>
         </div>
-        <section class="container">
-            <div class="reseach__img">
-            </div>
-        </section>
     </header>
-    </div>
+    <section class="container__new">
+        <div class="main_new">
+            <section class="buttons">
+                <a href="#.html" class="btn btn-2">研究室について</a><a href="#.html" class="btn btn-2">研究テーマ</a>
+                <a href="#.html" class="btn btn-2">研究室について</a><a href="#.html" class="btn btn-2">研究テーマ</a>
+                <a href="#.html" class="btn btn-2">研究室について</a>
+            </section>
+            <h4>新着情報</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut debitis assumenda harum ipsam sint, magni, laboriosam quia excepturi similique reiciendis ea unde cumque numquam voluptatem minus est non soluta!</p>
+        </div>
+    </section>
     <main>
         <!-- mainコンテンツここから -->
-        <section class="container__main">
-            <div class="main_l">
-                    <h4>新着情報</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut debitis assumenda harum ipsam sint, magni, laboriosam quia excepturi similique reiciendis ea unde cumque numquam voluptatem minus est non soluta!</p>
-            </div>
-            <div class="main_r">
-                <a class="twitter-timeline" href="https://twitter.com/gucchi1048" width="400px" height="350px" data-chrome="no header nofooter noborders transparent">Tweets by gucchi1048</a>
-                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </section>
-            <section class="container">
+        <section class="container">
             <div class="main_reseach">
+                <!-- 研究テーマここから -->
                 <div class="site__wrapper">
-                                        <h4>研究テーマ</h4>
+                    <h4>研究テーマ</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ut debitis assumenda harum ipsam sint, magni, laboriosam quia excepturi similique reiciendis ea unde cumque numquam voluptatem minus est non soluta!</p>
                     <div class="grid">
                         <div class="card">
@@ -182,8 +165,14 @@
                         </div>
                     </div>
                 </div><!-- @end site__wrapper -->
-</div>
-            </section>
+            </div><!-- 研究テーマここまで -->
+            <!-- twiterここから -->
+            <div class="main_twitter">
+                <a class="twitter-timeline" href="https://twitter.com/gucchi1048" width="400px" height="780px" data-chrome="no header nofooter noborders transparent">Tweets by gucchi1048</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <!-- twitterここまで -->
+        </section>
     </main><!-- mainコンテンツここまで -->
     <footer>
         <section class="footer__container">
