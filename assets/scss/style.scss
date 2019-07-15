@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 @import "bootstrap";
@@ -92,9 +94,11 @@ video {
 
 .headerRight video {
     min-width: 100%;
-    filter: grayscale(1%);
+    filter: grayscale(2%);
     z-index: 0;
 }
+
+
 
 // 全体ここまで
 
@@ -236,8 +240,9 @@ $white: #fff;
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 80%;
     margin-top: 10px;
+    margin: 0 auto ;
 }
 
 //button styles
@@ -295,13 +300,13 @@ $white: #fff;
     backface-visibility: hidden;
     border-color: #fff;
     transition: width 350ms ease-in-out;
-    width: 70%;
+    width: 90%;
 }
 
 .btn-2:hover:before {
     bottom: auto;
     top: 0;
-    width: 70%;
+    width: 90%;
 
 }
 
@@ -312,36 +317,41 @@ header {
     display: fixed;
     position: absolute;
     width: 100%;
-    top: 45px;
     right: 0px;
-    height: 500px;
+    padding-top: 45px;
+    height: 600px;
     z-index: 0;
+    overflow: hidden;
 }
 
 .header__title {
-    width: 600px;
+    width: 500px;
     height: 600px;
-    background: url("../images/title_logo1.png") 100px 200px no-repeat;
-    opacity: .6;
+    background: url("../images/title_logo1.png") 100px 170px no-repeat;
+    opacity: .3;
     display: block;
-    text-indent: -9999px;
-
+font-family: 'Squada One', cursive;
+line-height: 1.1em;
+/*     text-indent: -9999px; */
 }
 
 .header__title:hover {
     background: url("../images/title_logo2.png") no-repeat;
-    background-position: 45px bottom;
+    background-position: 100px 210px;
     opacity: 1;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 // マウスホバーで光るanimationボタン
 .bluelight {
     display: table;
     width: 500px;
-    height: 500px;
+    height: 600px;
     position: absolute;
-    left: 20%;
-    top: 30%;
+    left: 50%;
+    top: 35%;
     transform: translate(-50%, -50%);
 
     a {
