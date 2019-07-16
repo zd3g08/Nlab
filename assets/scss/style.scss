@@ -314,7 +314,7 @@ $white: #fff;
 
 //メニューボタンここまで
 
-header {
+.header__index {
     /* ナビゲーションバー */
     display: fixed;
     position: absolute;
@@ -667,7 +667,7 @@ $header-font-family: "Montserrat";
     padding-right: 0.2em;
     padding-bottom: 0.4em;
 
-    @media screen and (min-width: 40.063em) {
+    @media screen and (min-width: 100px) {
         float: left;
         width: 33.333%;
     }
@@ -797,11 +797,11 @@ $header-font-family: "Montserrat";
 
 footer {
     position: absolute;
-    top: 1700px;
+    top: 1750px;
     width: 100%;
     justify-content: center;
     background:
-        url(../images/footer_bg_rogo.png) right bottom no-repeat,
+        url(../images/footer_bg_rogo.png) right 140px no-repeat,
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaMK8YYQI6Hwg8kDALudIyIGr+YqAAAAAElFTkSuQmCC) repeat,
         linear-gradient(135deg, #3AA0D4 0%, #076EB2 40%, #222222 100%);
     background-color: rgba(255, 255, 255, 0.5);
@@ -950,16 +950,14 @@ span.tel_text {
 }
 
 .footer__copyright {
-    position: absolute;
-    top: 2170px;
+    // position: absolute;
+    // top: 2250px;
     display: fixed;
     width: 100%;
     height: 60px;
     background-color: #000000;
     font-size: 0.9em;
     color: #ffffff;
-    position: absolute;
-    bottom: 0;
     line-height: 4.5em;
     letter-spacing: .1em;
     text-align: center;
