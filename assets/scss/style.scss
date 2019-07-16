@@ -25,17 +25,35 @@ body {
     display: block;
 }
 
-
-// #wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     position: relative;/*←相対位置*/
-//     padding-bottom: 120px;/*←footerの高さ*/
-//     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-// }
-
 ul {
     list-style: none;
+}
+
+.container__new::-webkit-scrollbar{
+height: 10px;
+}
+
+.container__newe::-webkit-scrollbar-track{
+background: transparent;
+border:none;
+}
+
+.container__new::-webkit-scrollbar-thumb{
+background: rgba(#fff,0.3);
+border-radius: 0px;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track{
+  background: #ffffff;
+  border: none;
+  box-shadow: inset 0 0 2px #777;
+}
+body::-webkit-scrollbar-thumb{
+  background: #111111;
+  box-shadow: none;
 }
 
 // topに戻るボタン
@@ -222,7 +240,6 @@ a.btn-l:hover {
 
 //メニューボタンここから
 
-
 //colors
 $red: #E1332D;
 $white: #fff;
@@ -265,10 +282,6 @@ $white: #fff;
     text-transform: uppercase;
     width: 100%;
 
-    @media(min-width: 600px) {
-        margin: 0 1em 2em;
-    }
-
     &:hover {
         color: #fff;
         text-decoration: none;
@@ -286,6 +299,7 @@ $white: #fff;
 .btn-2:active {
     letter-spacing: 2px;
     text-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
+
 }
 
 .btn-2:after,
@@ -316,7 +330,108 @@ $white: #fff;
 
 }
 
+.btn-3 {
+    display: block;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 0 0 0 20px;
+    background-color: rgba(#ffffff,.3);
+    width: 100%;
+    text-align: left;
+    font-size: .8em;
+    text-indent: .5em;
+    color: #000;
+    font-weight: 400;
+    line-height: 45px;
+}
+.btn-3:hover,
+.btn-3:active {
+    background-color: rgba(#ffffff,.6);
+    text-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
+    box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
+}
+.btn-3:after,
+.btn-3:before {
+    backface-visibility: hidden;
+    bottom: 0px;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+}
+.btn-3:hover:after,
+.btn-3:hover:before {
+    backface-visibility: hidden;
+    transition: width 350ms ease-in-out;
+}
+
+
 //メニューボタンここまで
+
+
+//プルダウンメニューここから
+
+
+.dropmenu{
+  *zoom: 1;
+  list-style-type: none;
+  width: 800px;
+  margin: 0 auto 0px;
+  padding: 0;
+}
+.dropmenu:before, .dropmenu:after{
+  content: "";
+  display: table;
+}
+.dropmenu:after{
+  clear: both;
+}
+.dropmenu li{
+  position: relative;
+  width: 20%;
+  float: left;
+  margin: 0;
+}
+.dropmenu li a{
+    cursor: pointer;
+    margin: 0;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {/* ホバーした時の文字色 */
+        color: #fff;
+        font-weight: 400;
+        transition: all 280ms ease-in-out;
+    }
+}
+.dropmenu li ul{
+  list-style: none;
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.dropmenu li ul li{ /* リストの縦ぞろえ */
+    width: 100%;
+}
+#dropmenu li ul li{
+  overflow: hidden;
+  height: 0;
+  transition: .2s;
+}
+#dropmenu li:hover ul li{/* プルダウン時のメニューの下移動幅 */
+  overflow: visible;
+  height: 46px;
+}
+
+
+//プルダウンここまで
 
 //headerここから
 //ウェルカムメッセージの横スクロールanimationここから
@@ -495,8 +610,8 @@ $white: #fff;
 
 .header__title {
     width: 500px;
-    height: 600px;
-    background: url("../images/title_logo1.png") 100px 170px no-repeat;
+    height: 500px;
+    background: url("../images/title_logo1.png") 100px 90px no-repeat;
     opacity: .3;
     display: block;
     font-family: 'Squada One', cursive;
@@ -506,7 +621,7 @@ $white: #fff;
 
 .header__title:hover {
     background: url("../images/title_logo2.png") no-repeat;
-    background-position: 100px 210px;
+    background-position: 100px 130px;
     opacity: 1;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
@@ -517,10 +632,10 @@ $white: #fff;
 .bluelight {
     display: table;
     width: 500px;
-    height: 600px;
+    height: 500px;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%, -50%);
 
     a {
@@ -736,7 +851,7 @@ div.main_new {
     margin-right: 10px;
     border-right: 1px solid #ffffff;
     background-color: rgba(#000000, .5);
-    overflow: hidden;
+    overflow: auto;
 }
 
 // .new_text__midasi {
@@ -806,11 +921,12 @@ div.main_reseach {
 
 .main_twitter {
     /* twitter */
-    width: 320px;
-    height: 900px;
-    margin: 0;
-    padding-top: 100px;
-    background: #ffffff;
+    width: 305px;
+    height: 850px;
+    margin-top: 60px;
+    padding-top: 30px;
+    background: #ffffff;/*
+    border: 2px solid #1b95e0; */
     // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
 
