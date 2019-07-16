@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap&subset=japanese');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
@@ -237,12 +238,15 @@ $white: #fff;
 
 // Main wrap
 .buttons {
+    /* /ヘッダーメニューの装飾/ */
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
     margin: 0 auto;
+    font-family: 'Kosugi', sans-serif;
+    background-color: rgba(#fff, .1);
 }
 
 //button styles
@@ -315,27 +319,113 @@ $white: #fff;
 //メニューボタンここまで
 
 //headerここから
+//ウェルカムメッセージの横スクロールanimationここから
+/* 「RightToLeft」の動作内容 */
+@keyframes RightToLeft {
+    0% {
+        opacity: 0;
+        /* 透明 */
+        transform: translateY(400px);
+        /* X軸方向に50px */
+    }
 
+    100% {
+        opacity: 1;
+        /* 不透明 */
+        transform: translateX();
 
+    }
+}
 
-.welcome {/* ウェルカムメッセージ */
+/* 「RightToLeft」を適用する箇所 */
+.welcome_animation {
+    animation-duration: 1s;
+    /* アニメーション時間 */
+    animation-name: RightToLeft;
+    /* アニメーション名 */
+    animation-iteration-count: none;
+    /* アニメーションの繰り返し*/
+}
+
+//ウェルカムメッセージの横スクロールanimation設定ここまで
+
+.welcome {
+    /* ウェルカムメッセージ */
     position: absolute;
     right: 230px;
-    top: 330px;
+    top: 270px;
     display: block;
-    width: 320px;
-    height: 270px;
-    background-color: rgba(#ffffff,.5);
+    width: 360px;
+    height: 350px;
+    background-color: rgba(#ffffff, .6);
     box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
     z-index: 300;
     font-size: 0.75em;
     text-align: justify;
-    overflow: hidden;
-    padding: 10px;
-
+    overflow: auto;
+    padding: 15px;
 }
 
-.Professor {/* 中口教授の画像 */
+.welcome h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
+
+.welcome hr {
+    border-color: #ffffff;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.welcome p {
+    padding: 0px 20px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.welcome__to {
+    text-align: center;
+}
+
+.welcome span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.welcome__contact {
+    width: 60%;
+    height: 45px;
+    border: 0px;
+    border-radius: .1em;
+    background: #ff0000;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+    -webkit-transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    -moz-transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome__contact:hover {
+    color: #eeeeee;
+    -webkit-transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    -moz-transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+}
+
+.Professor {
+    /* 中口教授の画像 */
     position: absolute;
     right: 0;
     top: 300px;
@@ -347,38 +437,40 @@ $white: #fff;
     z-index: 320;
 }
 
-.nafuda {/* 名前札 */
+.nafuda {
+    /* 名前札 */
     width: 150px;
     font-size: 0.9em;
     text-align: center;
     margin-top: 250px;
-margin-left: 15%;
-     color:#FFF;
-     text-shadow:0 1px 2px #111111;
-     padding: 10px 10px;
-     border-radius:.5px;
-     border:1px solid #222;
-     background:#505050;
-     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset,
-                 0 0 5px rgba(0, 0, 0, 0.3) inset,
-                 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin-left: 15%;
+    color: #FFF;
+    text-shadow: 0 1px 2px #111111;
+    padding: 5px 10px;
+    border-radius: .5px;
+    border: 1px solid #222;
+    background: #505050;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset,
+        0 0 5px rgba(0, 0, 0, 0.3) inset,
+        0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.triangle {/* メッセージの吹き出し三角形 */
+.triangle {
+    /* メッセージの吹き出し三角形 */
     position: absolute;
     right: 0;
     top: 400px;
     right: 201px;
     width: 30px;
     height: 30px;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 30px solid rgba(#ffffff,.5);
-  z-index: 330;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 30px solid rgba(#ffffff, .6);
+    z-index: 330;
 }
 
 .welcome:hover {
-    background-color: rgba(#ffffff,.7);
+    background-color: rgba(#ffffff, .8);
     text-decoration: none;
     -webkit-transition: .1s ease-in-out;
     /*変化の速度を指定*/
@@ -569,15 +661,15 @@ div.main_new {
     border-top-left-radius: 5px;
     border-top-right: 10px solid #000000;
     border-top-left: 10px solid #000000;
-    padding-top: 10px;
+    padding: 10px 30px 0 30px;
     padding-bottom: 5px;
     position: absolute;
     top: 566px;
     left: 100px;
     z-index: 100;
     background-color: #000000;
-    letter-spacing: .8em;
-    text-indent: .8em;
+    letter-spacing: .4em;
+    text-indent: .4em;
     color: #ffffff;
 }
 
@@ -594,8 +686,9 @@ div.main_new {
     padding-bottom: 10px;
     position: absolute;
     top: 572px;
-    left: 400px;
+    left: 395px;
     z-index: 100;
+    font-size: .8em;
     background-color: #000000;
     letter-spacing: .2em;
     text-indent: .2em;
@@ -612,6 +705,7 @@ div.main_new {
 
 .history_text:hover a {
     text-decoration: none;
+    color: #fff;
 }
 
 .new_box {
@@ -645,9 +739,9 @@ div.main_new {
     overflow: hidden;
 }
 
-.new_text__midasi {
-    text-indent: .5em;
-}
+// .new_text__midasi {
+//     text-indent: .5em;
+// }
 
 hr {
     border-color: #ffffff;
@@ -674,6 +768,18 @@ main {
     z-index: 140;
 }
 
+h2 {
+    /* 見出しのタイトルデザイン */
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    color: #fff;
+    background: linear-gradient(135deg, transparent, transparent, rgba(#3AA0D4, .7) 35%, rgba(#076EB2, .8) 60%, transparent, transparent);
+    font-family: 'Kosugi', sans-serif;
+    margin-bottom: 20px;
+}
+
 section.container {
     min-width: 1100px;
     min-height: 900px;
@@ -688,12 +794,17 @@ div.main_reseach {
     width: 750px;
     height: 900px;
     margin: 0;
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: #ffffff;
     // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
 
-div.main_twitter {
+.main_reseach p {
+    font-size: .9em;
+    margin-bottom: 30px;
+}
+
+.main_twitter {
     /* twitter */
     width: 320px;
     height: 900px;
@@ -702,6 +813,74 @@ div.main_twitter {
     background: #ffffff;
     // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
+
+
+
+/* twitter circles ====================================================== */
+#twitter-circle .tw-outside {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+}
+
+#twitter-circle .tw-text,
+#twitter-circle .tw-click {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 100%;
+    transition: 0.3s ease all;
+}
+
+#twitter-circle .tw-text {
+    font-size: 1.5em;
+    font-weight: 900;
+    z-index: 9999;
+}
+
+#twitter-circle .tw-click {
+    z-index: 8888;
+}
+
+/* twitter 3 ------------------------------------ */
+#tw-3 {/* 丸いtwitterアイコン */
+    height: 50px;
+    width: 50px;
+}
+
+#tw-3 .tw-text {/* 丸いtwitterアイコン */
+    background: #1b95e0;
+    font-size: 30px;
+    height: 100%;
+    padding-top: 5px;
+    border-radius: 50%;
+}
+
+#tw-3 .tw-click {
+    background: transparent;
+    opacity: 0;
+    padding: 15px 0 0 0;
+}
+
+#tw-3:hover .tw-text {/* くるくる回る */
+    transform: rotate(-360deg);
+    margin-left: 0px;
+}
+
+#tw-3:hover .tw-click {
+    opacity: 1;
+    margin-left: 30px;
+    width: 280px;
+    height: 50px;
+    background-color: #1b95e0;
+    padding: 5 0 0 0;
+    margin-top: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
 
 
 //Cardここから
@@ -750,8 +929,6 @@ $header-font-family: "Montserrat";
 }
 
 // Card Article
-.card {}
-
 .card__image {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -785,8 +962,27 @@ $header-font-family: "Montserrat";
     color: white;
     display: inline-block;
     font-family: $header-font-family;
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1.2em;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: rgba(white, 0.7);
+        text-decoration: none;
+    }
+}
+
+.card__title_ja {
+    color: white;
+    display: inline-block;
+    font-family: $header-font-family;
+    font-size: 2em;
+    font-weight: 900;
     line-height: 1.2;
     margin-bottom: 0.75em;
     text-decoration: none;
@@ -800,6 +996,7 @@ $header-font-family: "Montserrat";
         text-decoration: none;
     }
 }
+
 
 .card__overlay {
     content: "";
@@ -826,38 +1023,53 @@ $header-font-family: "Montserrat";
 
 .card__overlay-content {
     position: absolute;
+    bottom: 0px;
+    padding: 1.5em;
+    z-index: 3;
+}
+
+.card__overlay-content1 {
+    position: absolute;
+    bottom: 40px;
+    padding: 1.5em;
+    z-index: 3;
+}
+
+.card__overlay-content2 {
+    position: absolute;
+    bottom: 20px;
+    padding: 1.5em;
+    z-index: 3;
+}
+
+.card__overlay-content3 {
+    position: absolute;
     bottom: 0;
+    padding: 1.5em;
+    z-index: 3;
+}
+
+.card__overlay-content4 {
+    position: absolute;
+    bottom: 20px;
     padding: 1.5em;
     z-index: 3;
 }
 
 .card__meta {
     margin: 0;
-    margin-right: -1em;
+    margin-left: 1em;
     margin-bottom: 0.75em;
-
-    &.card__meta--last {
-        margin-bottom: 0;
-    }
+    text-align: left;
 
     li {
         color: #f8f8f8;
-        display: inline;
         list-style-type: none;
         margin-bottom: 0;
         padding-right: 1em;
-
-        font-size: 0.85em;
+        font-size: .9em;
         font-variant: small-caps;
         letter-spacing: 1px;
-
-        &:not(:last-child):after {
-            content: "\25cf";
-            font-style: normal;
-            position: relative;
-            color: rgba(white, 0.25);
-            right: -0.6em;
-        }
 
         >a {
             color: #f8f8f8;
@@ -987,7 +1199,6 @@ span.tel_text {
     padding: 0px 0 0 4px;
     font-family: 'Loto', sans-serif;
 }
-
 
 .footer__contact {
     width: 200px;
