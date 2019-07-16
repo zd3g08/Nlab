@@ -314,6 +314,81 @@ $white: #fff;
 
 //メニューボタンここまで
 
+//headerここから
+
+
+
+.welcome {/* ウェルカムメッセージ */
+    position: absolute;
+    right: 230px;
+    top: 330px;
+    display: block;
+    width: 320px;
+    height: 270px;
+    background-color: rgba(#ffffff,.5);
+    box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
+    z-index: 300;
+    font-size: 0.75em;
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.Professor {/* 中口教授の画像 */
+    position: absolute;
+    right: 0;
+    top: 300px;
+    width: 231px;
+    height: 308px;
+    display: block;
+    background: url("../images/Nakaguchi2017s.png") no-repeat;
+    background-size: 231px;
+    z-index: 320;
+}
+
+.nafuda {/* 名前札 */
+    width: 150px;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 250px;
+margin-left: 15%;
+     color:#FFF;
+     text-shadow:0 1px 2px #111111;
+     padding: 10px 10px;
+     border-radius:.5px;
+     border:1px solid #222;
+     background:#505050;
+     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset,
+                 0 0 5px rgba(0, 0, 0, 0.3) inset,
+                 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.triangle {/* メッセージの吹き出し三角形 */
+    position: absolute;
+    right: 0;
+    top: 400px;
+    right: 201px;
+    width: 30px;
+    height: 30px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid rgba(#ffffff,.5);
+  z-index: 330;
+}
+
+.welcome:hover {
+    background-color: rgba(#ffffff,.7);
+    text-decoration: none;
+    -webkit-transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    -moz-transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+    transition: .1s ease-in-out;
+    /*変化の速度を指定*/
+}
+
+
 .header__index {
     /* ナビゲーションバー */
     display: fixed;
@@ -588,11 +663,11 @@ hr {
 main {
     position: absolute;
     width: 100%;
-    top: 850px;
+    top: 800px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 0 0px 0;
+    padding: 0;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAG0lEQVQoU2N8//59AwMBwAhSJCgoiFfhqCIGALZlI1fEYv1lAAAAAElFTkSuQmCC
 ) repeat,
         rgba(255, 255, 255, 0.7);
@@ -613,7 +688,7 @@ div.main_reseach {
     width: 750px;
     height: 900px;
     margin: 0;
-    padding: 20px;
+    padding: 100px 20px;
     background: #ffffff;
     // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
@@ -621,8 +696,9 @@ div.main_reseach {
 div.main_twitter {
     /* twitter */
     width: 320px;
+    height: 900px;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 100px;
     background: #ffffff;
     // box-shadow: 0 0 5px #eee, 0 0 3px #eee, 0 0 5px #eee;
 }
@@ -797,11 +873,11 @@ $header-font-family: "Montserrat";
 
 footer {
     position: absolute;
-    top: 1750px;
+    top: 1700px;
     width: 100%;
     justify-content: center;
     background:
-        url(../images/footer_bg_rogo.png) right 140px no-repeat,
+        url(../images/footer_bg_rogo.png) right 200px no-repeat,
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaMK8YYQI6Hwg8kDALudIyIGr+YqAAAAAElFTkSuQmCC) repeat,
         linear-gradient(135deg, #3AA0D4 0%, #076EB2 40%, #222222 100%);
     background-color: rgba(255, 255, 255, 0.5);
