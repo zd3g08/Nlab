@@ -144,7 +144,7 @@ video {
     background: rgba(#fff, 0.5);
     border-bottom-left-radius: .2em;
     border-bottom-right-radius: .2em;
-
+    z-index: 330;
 }
 
 /* google翻訳ここまで */
@@ -543,7 +543,7 @@ $white: #fff;
     /* 中口教授の画像 */
     position: absolute;
     right: 0;
-    top: 300px;
+    margin-top: 185px;
     width: 231px;
     height: 308px;
     display: block;
@@ -574,7 +574,7 @@ $white: #fff;
     /* メッセージの吹き出し三角形 */
     position: absolute;
     right: 0;
-    top: 400px;
+    top: 450px;
     right: 201px;
     width: 30px;
     height: 30px;
