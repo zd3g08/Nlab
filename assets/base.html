@@ -177,6 +177,7 @@
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/footerFixed.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/geometryangle.js"></script>
 <script>
 $(function() {
     // 小ボタンクリック
@@ -238,5 +239,10 @@ $(".hover").mouseleave(
         csObj.theme="rounded";
         $("#scrollbar").mCustomScrollbar(csObj);
     });
+</script>
+<script>
+  $(document).ready(function(){
+  $('header').Geometryangle({mesh:{}, lights: [{}], line: {}, vertex: {}});
+});
 </script>
 </html>
