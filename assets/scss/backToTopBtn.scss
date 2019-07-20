@@ -5,11 +5,12 @@
     right: 1%;
     bottom: 1.5%;
     color: #fff;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     z-index: 500;
     display: none;
-    border-radius: 20px;
+    border-radius: 50%;
+font-size: 1.5em;
     -webkit-transition: .1s ease-in-out;
     /*変化の速度を指定*/
     -moz-transition: .1s ease-in-out;
@@ -22,8 +23,8 @@
     font-family: "FontAwesome";
     content: "\f077";
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     padding-top: 4px;
     position: absolute;
     left: 0;
@@ -32,15 +33,15 @@
     vertical-align: middle;
     text-align: center;
     z-index: 200;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 .back-to-top:after {
     font-family: "FontAwesome";
     content: "\f077";
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     left: 0;
     top: 0;
@@ -56,12 +57,12 @@
 .google_translate {
 position: absolute;
 right: 20px;
-top: 40px;
+top: 0px;
     width: 150px;
     height: 20px;
     padding: 10px 0;
     margin-right: 2%;
-    background: rgba(#fff, 0.5);
+    // background: rgba(#fff, 0.5);
     border-bottom-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
@@ -69,12 +70,12 @@ top: 40px;
 .font-size-btn {
 position: absolute;
 right: 175px;
-top: 40px;
+top: 0px;
     width: 150px;
     height: 20px;
     padding: 10px 0;
     margin-right: 2%;
-    background: rgba(#fff, 0.5);
+    // background: rgba(#fff, 0.5);
     border-bottom-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
@@ -87,50 +88,50 @@ h6.fsz-font {
     padding: 0;
     margin-top: 5px;
     margin-left: 5px;
+    margin-right: 5px;
     vertical-align: middle;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-weight: bold;
-    color: #111111;
+    // font-weight: bold;
+    color: #cccccc;
     float: left;
 }
 
 .btn-s,
 .btn-m,
 .btn-l {
-    font-size: 0.8em;
+    font-size: .9em;
     position: relative;
     padding: 0 3px;
     top: 0px;
     text-decoration: none;
-    background: #ffffff;
+    background: #eeeeee;
     color: #111111;
     font-weight: bold;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    border: 1px solid #3aa0d4;
 }
 
 .btn-s:hover {
-    background: #3aa0d4;
+    background: #de0b46;
 }
 
 .btn-s:active {
-    background: #3aa0d4;
+    background: #de0b46;
 }
 
 .btn-m:hover {
-    background: #3aa0d4;
+    background: #de0b46;
 }
 
 .btn-m:active {
-    background: #3aa0d4;
+    background: #de0b46;
 }
 
 .btn-l:hover {
-    background: #3aa0d4;
+    background: #de0b46;
 }
 
 .btn-l:active {
-    background: #3aa0d4;
+    background: #de0b46;
 }
 
 a.btn-s,

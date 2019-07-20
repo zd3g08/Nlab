@@ -12,34 +12,76 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
 </head>
 
-<body><!--     <div id="wrapper"> -->
-        <!-- footerを最下部に固定 -->
-        <a href="#" class="back-to-top"></a><!-- topに戻るボタン -->
-        <!-- ナビゲーションメニューここから -->
-        <section class="nav_pankuzu">
-            <div class="pankuzu__menu">
-                <span class="pankuzu__text">トップぺージ</span>
-                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                <span class="pankuzu__text">研究テーマ</span>
-            </div>
-            <div class="google_translate" id="google_translate_element"></div>
-            <script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
-            }
-            </script>
-            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-            <div class="font-size-btn">
-                <p class="fsz">
-                    <h6 class="fsz-font">文字サイズ</h6>
-                    <a href="#" class="btn-s">小</a>
-                    <a href="#" class="btn-m">中</a>
-                    <a href="#" class="btn-l">大</a>
-                </p>
-            </div>
-        </section><!-- パンくずリストここまで -->
-        <header>
-        <section class="buttons">
+<body>
+<header>
+<canvas class="background"></canvas>
+    <!--     <div id="wrapper"> -->
+    <!-- footerを最下部に固定 -->
+    <a href="#" class="back-to-top"></a><!-- topに戻るボタン -->
+    <!-- ナビゲーションメニューここから -->
+    <section class="nav_pankuzu">
+        <div class="pankuzu__menu">
+            <span class="pankuzu__text">トップぺージ</span>
+            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+            <span class="pankuzu__text">研究テーマ</span>
+        </div>
+        <div class="google_translate" id="google_translate_element"></div>
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'ja', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-68932896-1' }, 'google_translate_element');
+        }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <div class="font-size-btn">
+            <p class="fsz">
+                <h6 class="fsz-font">文字サイズ</h6>
+                <a href="#" class="btn-s">小</a>
+                <a href="#" class="btn-m">中</a>
+                <a href="#" class="btn-l">大</a>
+            </p>
+        </div>
+<div class="buttons">
+                <ul id="dropmenu" class="dropmenu">
+                <li><a href="#.html" class="btn btn-2">研究室について</a>
+                    <ul>
+                        <li><a class="btn-3" href="#">新着情報</a></li>
+                        <li><a class="btn-3" href="#">スタッフ一覧</a></li>
+                        <li><a class="btn-3" href="#">学生・卒業生</a></li>
+                        <li><a class="btn-3" href="#">業績</a></li>
+                        <li><a class="btn-3" href="#">イベントアルバム</a></li>
+                    </ul>
+                </li>
+                <li class="btn-2-now">研究テーマ
+<!--                     <ul>
+                        <li><a href="#" class="btn-3">治療支援</a></li>
+                        <li><a href="#" class="btn-3">医療訓練システム</a></li>
+                        <li><a href="#" class="btn-3">舌画像の計測・解析</a></li>
+                        <li><a href="#" class="btn-3">画像診断支援</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#.html" class="btn btn-2">セミナー情報</a>
+                    <ul>
+                        <li><a href="#" class="btn-3">中口研ゼミについて</a></li>
+                        <li><a href="#" class="btn-3">専門ゼミ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#.html" class="btn btn-2">リンク</a>
+                    <ul>
+                        <li><a href="#" class="btn-3">千葉大学関係</a></li>
+                        <li><a href="#" class="btn-3">学会</a></li>
+                    </ul>
+                </li>
+                <li><a href="#.html" class="btn btn-2">お問い合わせ</a>
+                    <ul>
+                        <li><a href="#" class="btn-3">アクセス</a></li>
+                        <li><a href="#" class="btn-3">メールフォーム</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+</div>
+    </section><!-- パンくずリストここまで -->
+<!--     <section class="buttons">
             <ul id="dropmenu" class="dropmenu">
                 <li><a href="#.html" class="btn btn-2">研究室について</a>
                     <ul>
@@ -77,99 +119,391 @@
                     </ul>
                 </li>
             </ul>
+        </section> -->
+        <div class='grain'></div>
+        <div class='intro'>
+            <div class='center'>
+                <div class='core'></div>
+                <div class='outer_one'>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                    <div class='outer_one__piece'></div>
+                </div>
+                <div class='outer_two'>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                    <div class='outer_two__piece'></div>
+                </div>
+                <div class='outer_three'>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                    <div class='outer_three__piece'></div>
+                </div>
+                <div class='outer_four'>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                    <div class='outer_four__piece'></div>
+                </div>
+                <div class='outer_five'>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                    <div class='outer_five__piece'></div>
+                </div>
+                <div class='pieces'>
+                    <div class='future_ui__piece'>
+                        <span>治療支援</span>
+                        <div class='line'></div>
+                        <div class='tip'>
+                            Therapy Support
+                        </div>
+                    </div>
+                    <div class='future_ui__piece'>
+                        <span>医療訓練システム</span>
+                        <div class='line'></div>
+                        <div class='tip'>
+                            Medical training system
+                        </div>
+                    </div>
+                    <div class='future_ui__piece'>
+                        <span>舌画像の計測・解析</span>
+                        <div class='line'></div>
+                        <div class='tip'>
+                            Measurement and analysis of tongue image
+                        </div>
+                    </div>
+                    <div class='future_ui__piece'>
+                        <span>画像診断支援</span>
+                        <div class='line'></div>
+                        <div class='tip'>
+                            Diagnostic imaging support
+                        </div>
+                    </div>
+<!--                     <div class='future_ui__piece'>
+                        <span>Shields</span>
+                        <div class='line'></div>
+                        <div class='tip'>
+                            Status report!
+                        </div>
+                    </div> -->
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                    <div class='future_ui__piece blank'></div>
+                </div>
+            </div>
+        </div>
+
+<section class="header__midasi">
+<h1><span>研究テーマ</span></h1>
+</section>
+
+    </header>
+    <main class="main__base">
+        <!-- mainコンテンツここから -->
+        <section class="container">
+            <div class="main__contents">
+                <!-- 研究テーマここから -->
+                <h4>研究テーマ</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
+            </div><!-- 研究テーマここまで -->
         </section>
-        </header>
-        <main class="main__base">
-            <!-- mainコンテンツここから -->
-            <section class="container">
-                <div class="main__contents"><!-- 研究テーマここから -->
-                        <h4>研究テーマ</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, distinctio! Quia adipisci corporis voluptate optio laboriosam, perspiciatis quae! Hic quisquam numquam eos facere quas ducimus excepturi accusantium ea debitis commodi!</p>
-                </div><!-- 研究テーマここまで -->
-            </section>
-        </main><!-- mainコンテンツここまで -->
-        <footer id="footer">
-            <section class="footer__container">
-                <div class="footer__menu1">
-                    <p class="footer__midasi"><span class="footer__midasi__text">研究室について</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;新着情報</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;スタッフ一覧</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-graduation-cap"></i>&nbsp;学生・卒業生</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-trophy"></i>&nbsp;&nbsp;業績</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-camera"></i>&nbsp;&nbsp;イベントアルバム</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu1">
-                    <p class="footer__midasi"><span class="footer__midasi__text">研究テーマ</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-medkit"></i>&nbsp;&nbsp;治療支援</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-heartbeat"></i>&nbsp;&nbsp;医療訓練システム</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-smile-o"></i>&nbsp;&nbsp;舌画像の計測・解析</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;画像診断支援</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu1">
-                    <p class="footer__midasi"><span class="footer__midasi__text">研究メンバー用</span></p>
+    </main><!-- mainコンテンツここまで -->
+    <footer id="footer">
+        <section class="footer__container">
+            <div class="footer__menu1">
+                <p class="footer__midasi"><span class="footer__midasi__text">研究室について</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;新着情報</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;スタッフ一覧</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-graduation-cap"></i>&nbsp;学生・卒業生</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-trophy"></i>&nbsp;&nbsp;業績</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-camera"></i>&nbsp;&nbsp;イベントアルバム</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu1">
+                <p class="footer__midasi"><span class="footer__midasi__text">研究テーマ</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-medkit"></i>&nbsp;&nbsp;治療支援</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-heartbeat"></i>&nbsp;&nbsp;医療訓練システム</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-smile-o"></i>&nbsp;&nbsp;舌画像の計測・解析</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-picture-o"></i>&nbsp;&nbsp;画像診断支援</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu1">
+                <p class="footer__midasi"><span class="footer__midasi__text">研究メンバー用</span></p>
                 <ul class="footer__midasi__ul">
                     <li><a class="footer__text" href="http://nlab.tms.chiba-u.jp/book/" target="_blanc"><i class="fa fa-search"></i>&nbsp;&nbsp;蔵書DB</a></li>
                     <li><a class="footer__text" href="http://nlab.tms.chiba-u.jp/gitbucket/" target="_blanc"><i class="fa fa-bitbucket"></i>&nbsp;&nbsp;Gitbucket</a></li>
                     <li><a class="footer__text" href="https://nlab.tms.chiba-u.jp/moodle/login/index.php" target="_blanc"><i class="fa fa-pencil-square"></i>&nbsp;&nbsp;Moodle</a></li>
                     <li><a class="footer__text" href="http://nakaguchilab.slack.com" target="_blanc"><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</a></li>
                 </ul>
-                </div>
-                <div class="footer__menu2">
-                    <p class="footer__midasi"><span class="footer__midasi__text">アクセス</span></p>
-                    <p class="access__text">
-                        〒&nbsp;263-8522<br>
-                        千葉市稲毛区弥生町&nbsp;1-33<br>
-                        千葉大学 西千葉キャンパス<br>
-                        フロンティア医工学センター<br>
-                        (CFME)&nbsp;A棟 2階<br>
-                        <i class="fa fa-subway" aria-hidden="true"></i>&nbsp;JR&nbsp;西千葉駅から徒歩約&nbsp;8&nbsp;分<br><br>
-                        <a class="footer__text" href="https://goo.gl/maps/mHtnEFfH4kwZ7vhJ8" target="_blanc"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Google&nbsp;map&nbsp;で開く</a>
-                    </p>
-                </div>
-                <div class="footer__menu3">
-                    <p class="footer__midasi"><span class="footer__midasi__text">お問い合わせ</span></p>
-                    <p class="footer__contact__tel"><i class="fa fa-phone"></i>&nbsp;TEL&nbsp;/&nbsp;FAX&nbsp;&nbsp;(&nbsp;直通&nbsp;)<br><span class="tel_text">043-290-3296</span></p>
-                    <a class="footer__text" href="#">
-                        <div class="footer__contact">お問い合わせフォーム&nbsp;&nbsp;<i class="fa fa-envelope fa-1x" aria-hidden="true"></i></div>
-                    </a>
-                </div>
-            </section>
-            <section class="footer__container2">
-                <div class="footer__menu4">
-                    <p class="footer__midasi"><span class="footer__midasi__text">セミナー情報</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-cube"></i>&nbsp;中口研ゼミについて</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-comments"></i>&nbsp;'19年度前期専門ゼミ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu4">
-                    <p class="footer__midasi"><span class="footer__midasi__text">SNS</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;Faebook</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
-                    </ul>
-                </div>
-                <div class="footer__menu4">
-                    <p class="footer__midasi"><span class="footer__midasi__text">リンク</span></p>
-                    <ul class="footer__midasi__ul">
-                        <li><a class="footer__text" href="#"><i class="fa fa-university"></i>&nbsp;&nbsp;千葉大学関係</a></li>
-                        <li><a class="footer__text" href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;学会</a></li>
-                    </ul>
-                </div>
-                <div class="google-maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.935819006356!2d140.0990303!3d35.6293087!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x6022849d37769a21%3A0x516c5457385267fe!2z44CSMjYzLTAwMjIg5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy65byl55Sf55S677yR4oiS77yT77yT!5e0!3m2!1sja!2sjp!4v1562647007995!5m2!1sja!2sjp" width="100%" height="180px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-            </section>
+            </div>
+            <div class="footer__menu2">
+                <p class="footer__midasi"><span class="footer__midasi__text">アクセス</span></p>
+                <p class="access__text">
+                    〒&nbsp;263-8522<br>
+                    千葉市稲毛区弥生町&nbsp;1-33<br>
+                    千葉大学 西千葉キャンパス<br>
+                    フロンティア医工学センター<br>
+                    (CFME)&nbsp;A棟 2階<br>
+                    <i class="fa fa-subway" aria-hidden="true"></i>&nbsp;JR&nbsp;西千葉駅から徒歩約&nbsp;8&nbsp;分<br><br>
+                    <a class="footer__text" href="https://goo.gl/maps/mHtnEFfH4kwZ7vhJ8" target="_blanc"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Google&nbsp;map&nbsp;で開く</a>
+                </p>
+            </div>
+            <div class="footer__menu3">
+                <p class="footer__midasi"><span class="footer__midasi__text">お問い合わせ</span></p>
+                <p class="footer__contact__tel"><i class="fa fa-phone"></i>&nbsp;TEL&nbsp;/&nbsp;FAX&nbsp;&nbsp;(&nbsp;直通&nbsp;)<br><span class="tel_text">043-290-3296</span></p>
+                <a class="footer__text" href="#">
+                    <div class="footer__contact">お問い合わせフォーム&nbsp;&nbsp;<i class="fa fa-envelope fa-1x" aria-hidden="true"></i></div>
+                </a>
+            </div>
+        </section>
+        <section class="footer__container2">
+            <div class="footer__menu4">
+                <p class="footer__midasi"><span class="footer__midasi__text">セミナー情報</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-cube"></i>&nbsp;中口研ゼミについて</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-comments"></i>&nbsp;'19年度前期専門ゼミ</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu4">
+                <p class="footer__midasi"><span class="footer__midasi__text">SNS</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-facebook-official"></i>&nbsp;&nbsp;Faebook</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-instagram"></i>&nbsp;&nbsp;Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu4">
+                <p class="footer__midasi"><span class="footer__midasi__text">リンク</span></p>
+                <ul class="footer__midasi__ul">
+                    <li><a class="footer__text" href="#"><i class="fa fa-university"></i>&nbsp;&nbsp;千葉大学関係</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-book"></i>&nbsp;&nbsp;学会</a></li>
+                </ul>
+            </div>
+            <div class="google-maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3242.935819006356!2d140.0990303!3d35.6293087!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x6022849d37769a21%3A0x516c5457385267fe!2z44CSMjYzLTAwMjIg5Y2D6JGJ55yM5Y2D6JGJ5biC56iy5q-b5Yy65byl55Sf55S677yR4oiS77yT77yT!5e0!3m2!1sja!2sjp!4v1562647007995!5m2!1sja!2sjp" width="100%" height="180px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
         <div class="footer__copyright" id="footer">
             <small>Copyright: Nakaguchi Lab. Chiba Univ. 2011 All rights reserved.</small>
         </div>
-        </footer>
+    </footer>
     <!-- </div>wrapper -->
 </body>
 <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
@@ -179,6 +513,7 @@
 <script type="text/javascript" src="js/footerFixed.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="js/geometryangle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 <script>
 $(function() {
     // 小ボタンクリック
@@ -201,14 +536,14 @@ $(function() {
 <script>
 $(document).ready(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) { // 100pxスクロールしていたら上に戻るボタンを表示
+        if ($(this).scrollTop() > 120) { // 100pxスクロールしていたら上に戻るボタンを表示
             $(".back-to-top").fadeIn();
         } else {
             $(".back-to-top").fadeOut();
         }
     });
     $(".back-to-top").click(function() {
-        $("body,html").animate({ scrollTop: 0 }, 500); // 800msかけて上に戻る
+        $("body,html").animate({ scrollTop: 0 }, 400); // 800msかけて上に戻る
     });
 });
 </script>
@@ -235,15 +570,25 @@ $(".hover").mouseleave(
 );
 </script>
 <script>
-    $(function(){
-        var csObj = new Object();
-        csObj.theme="rounded";
-        $("#scrollbar").mCustomScrollbar(csObj);
-    });
+$(function() {
+    var csObj = new Object();
+    csObj.theme = "rounded";
+    $("#scrollbar").mCustomScrollbar(csObj);
+});
 </script>
-<script>
+<!-- <script>
   $(document).ready(function(){
   $('.main__base').Geometryangle({mesh:{}, lights: [{}], line: {}, vertex: {}});
+});
+</script> -->
+<script>
+var particles = Particles.init({
+  selector: '.background',
+  maxParticles: 100,
+  minDistance: 180,
+  sizeVariations: 8,
+  color: ['#00bbdd', '#404B69', '#DBEDF3'],
+  connectParticles: true
 });
 </script>
 </html>

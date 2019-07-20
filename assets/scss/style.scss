@@ -62,11 +62,12 @@ body::-webkit-scrollbar-thumb{
     right: 1%;
     bottom: 1.5%;
     color: #fff;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     z-index: 500;
     display: none;
-    border-radius: 20px;
+    border-radius: 50%;
+font-size: 1.5em;
     -webkit-transition: .1s ease-in-out;
     /*変化の速度を指定*/
     -moz-transition: .1s ease-in-out;
@@ -79,8 +80,8 @@ body::-webkit-scrollbar-thumb{
     font-family: "FontAwesome";
     content: "\f077";
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     padding-top: 4px;
     position: absolute;
     left: 0;
@@ -89,15 +90,15 @@ body::-webkit-scrollbar-thumb{
     vertical-align: middle;
     text-align: center;
     z-index: 200;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 .back-to-top:after {
     font-family: "FontAwesome";
     content: "\f077";
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     left: 0;
     top: 0;
@@ -107,7 +108,6 @@ body::-webkit-scrollbar-thumb{
     background: linear-gradient(0deg, #330000 0%, #800000 100%);
     color: #cccccc;
 }
-
 
 video {
     position: fixed;
