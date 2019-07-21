@@ -42,6 +42,8 @@ body::-webkit-scrollbar-thumb{
   box-shadow: none;
 }
 
+
+
 // topに戻るボタン
 .back-to-top {
     position: fixed;
@@ -569,6 +571,9 @@ padding: 0 0 0 50px;
     background: url("../images/Nakaguchi2017s.png") no-repeat;
     background-size: 231px;
     z-index: 320;
+a {
+    text-decoration: none;
+}
 }
 
 .nafuda {
