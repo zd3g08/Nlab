@@ -29,20 +29,6 @@ ul {
     list-style: none;
 }
 
-.container__new::-webkit-scrollbar{
-height: 10px;
-}
-
-.container__newe::-webkit-scrollbar-track{
-background: transparent;
-border:none;
-}
-
-.container__new::-webkit-scrollbar-thumb{
-background: rgba(#fff,0.3);
-border-radius: 0px;
-}
-
 body::-webkit-scrollbar{
   width: 10px;
 }
@@ -129,14 +115,14 @@ video {
     width: 100%;
     height: 40px;
     top: 0px;
-    right: 0px;
+    right: 1%;
     z-index: 50;
     text-align: center;
 }
 
 /* Google翻訳ここから */
 .google_translate {
-    width: 150px;
+    width: 130px;
     height: 40px;
     padding: 7px 0;
     margin-right: 2%;
@@ -255,15 +241,18 @@ $white: #fff;
 
 // Main wrap
 .buttons {
-    /* /ヘッダーメニューの装飾/ */
     display: flex;
+    position: absolute;
     justify-content: center;
-    text-align: center;
     width: 100%;
-    margin-top: 10px;
-    margin: 0 auto;
-    font-family: 'Kosugi', sans-serif;
-    background-color: rgba(#fff, .1);
+    height: 60px;
+    top: 45px;
+    right: 0px;
+    z-index: 50;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .2);
+    color: #ffffff;
+    z-index: 300;
 }
 
 //button styles
@@ -276,11 +265,10 @@ $white: #fff;
     font-weight: 400;
     line-height: 45px;
     margin: 0 0 2em;
-    max-width: 160px;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    width: 100%;
+    width: 130px;
 
     &:hover {
         color: #fff;
@@ -299,7 +287,6 @@ $white: #fff;
 .btn-2:active {
     letter-spacing: 2px;
     text-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
-
 }
 
 .btn-2:after,
@@ -330,26 +317,46 @@ $white: #fff;
 
 }
 
+.btn-2-now {
+    color: #000000;
+    cursor: default;
+    display: block;
+    position: relative;
+    top: 16%;
+    left: 1.5%;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 45px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    // background-color: rgba(#ffffff, .2);
+    border-radius: .1em;
+}
+
+
 .btn-3 {
     display: block;
     letter-spacing: 2px;
     margin: 0px;
     padding: 0 0 0 20px;
-    background-color: rgba(#ffffff,.3);
+    background-color: rgba(#ffffff, .3);
     width: 100%;
     text-align: left;
     font-size: .8em;
     text-indent: .5em;
-    color: #000;
+    color: #fff;
     font-weight: 400;
     line-height: 45px;
 }
+
 .btn-3:hover,
 .btn-3:active {
-    background-color: rgba(#ffffff,.6);
+    background-color: rgba(#ffffff, .6);
     text-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
     box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
 }
+
 .btn-3:after,
 .btn-3:before {
     backface-visibility: hidden;
@@ -360,12 +367,12 @@ $white: #fff;
     position: relative;
     transition: all 280ms ease-in-out;
 }
+
 .btn-3:hover:after,
 .btn-3:hover:before {
     backface-visibility: hidden;
     transition: width 350ms ease-in-out;
 }
-
 
 //メニューボタンここまで
 
@@ -373,61 +380,73 @@ $white: #fff;
 //プルダウンメニューここから
 
 
-.dropmenu{
-  *zoom: 1;
-  list-style-type: none;
-  width: 800px;
-  margin: 0 auto 0px;
-  padding: 0;
+.dropmenu {
+    *zoom: 1;
+    list-style-type: none;
+    width: 1000px;
+    margin: 0 auto;
+padding: 0 0 0 50px;
 }
-.dropmenu:before, .dropmenu:after{
-  content: "";
-  display: table;
+
+.dropmenu:before,
+.dropmenu:after {
+    content: "";
+    display: table;
 }
-.dropmenu:after{
-  clear: both;
+
+.dropmenu:after {
+    clear: both;
 }
-.dropmenu li{
-  position: relative;
-  width: 20%;
-  float: left;
-  margin: 0;
+
+.dropmenu li {
+    position: relative;
+    width: 18%;
+    float: left;
+    margin: 0;
 }
-.dropmenu li a{
+
+.dropmenu li a {
     cursor: pointer;
     margin: 0;
-    max-width: 160px;
+    max-width: 180px;
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%;
 
-    &:hover {/* ホバーした時の文字色 */
+    &:hover {
+        /* ホバーした時の文字色 */
         color: #fff;
         font-weight: 400;
         transition: all 280ms ease-in-out;
     }
 }
-.dropmenu li ul{
-  list-style: none;
-  position: absolute;
-  z-index: 9999;
-  top: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0;
+
+.dropmenu li ul {
+    list-style: none;
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
 }
-.dropmenu li ul li{ /* リストの縦ぞろえ */
+
+.dropmenu li ul li {
+    /* リストの縦ぞろえ */
     width: 100%;
 }
-#dropmenu li ul li{
-  overflow: hidden;
-  height: 0;
-  transition: .2s;
+
+#dropmenu li ul li {
+    overflow: hidden;
+    height: 0;
+    transition: .2s;
 }
-#dropmenu li:hover ul li{/* プルダウン時のメニューの下移動幅 */
-  overflow: visible;
-  height: 46px;
+
+#dropmenu li:hover ul li {
+    /* プルダウン時のメニューの下移動幅 */
+    overflow: visible;
+    height: 46px;
 }
 
 
@@ -440,7 +459,7 @@ $white: #fff;
     0% {
         opacity: 0;
         /* 透明 */
-        transform: translateY(400px);
+        transform: translateY(200px);
         /* X軸方向に50px */
     }
 
@@ -476,7 +495,7 @@ $white: #fff;
     box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
     z-index: 300;
     font-size: 0.75em;
-    text-align: justify;
+    text-align: center;
     overflow: auto;
     padding: 15px;
 }
@@ -543,7 +562,7 @@ $white: #fff;
     /* 中口教授の画像 */
     position: absolute;
     right: 0;
-    margin-top: 185px;
+    margin-top: 250px;
     width: 231px;
     height: 308px;
     display: block;
@@ -611,7 +630,7 @@ $white: #fff;
 .header__title {
     width: 500px;
     height: 500px;
-    background: url("../images/title_logo1.png") 100px 90px no-repeat;
+    background: url("../images/title_logo1.png") 100px 50px no-repeat;
     opacity: .3;
     display: block;
     font-family: 'Squada One', cursive;
@@ -621,7 +640,7 @@ $white: #fff;
 
 .header__title:hover {
     background: url("../images/title_logo2.png") no-repeat;
-    background-position: 100px 130px;
+    background-position: 100px 70px;
     opacity: 1;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
@@ -635,7 +654,7 @@ $white: #fff;
     height: 500px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
 
     a {
@@ -745,15 +764,15 @@ section.container__new {
     justify-content: center;
     top: 600px;
     left: 0;
-    min-width: 100%;
-    height: 260px;
+    width: 100%;
+    height: 340px;
     margin: 0;
     padding: 0px;
     text-align: center;
     display: flex;
     z-index: 150;
-    background-color: #000000;
-    overflow: auto;
+    background-color: rgba(#000000,1);
+    overflow: hidden;
 }
 
 div.main_new {
@@ -769,8 +788,8 @@ div.main_new {
     padding-bottom: 10px;
 }
 
-.infomation_text {
-    /* INFOMATIONの文字 */
+.information_text {
+    /* INFROMATIONの文字 */
     display: inline-block;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -780,48 +799,48 @@ div.main_new {
     padding-bottom: 5px;
     position: absolute;
     top: 566px;
-    left: 100px;
+    left: 42.5%;
     z-index: 100;
-    background-color: #000000;
     letter-spacing: .4em;
     text-indent: .4em;
+background-color: #000;
     color: #ffffff;
 }
 
-.history_text {
-    /* INFOMATIONの文字 */
-    display: inline-block;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-top-right: 10px solid #000000;
-    border-top-left: 10px solid #000000;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 572px;
-    left: 395px;
-    z-index: 100;
-    font-size: .8em;
-    background-color: #000000;
-    letter-spacing: .2em;
-    text-indent: .2em;
-    color: #ffffff;
-}
+// .history_text {
+//     /* 以前の記事を読む、の文字 */
+//     display: inline-block;
+//     border-top-right-radius: 5px;
+//     border-top-left-radius: 5px;
+//     border-top-right: 10px solid #000000;
+//     border-top-left: 10px solid #000000;
+//     padding-top: 10px;
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     padding-bottom: 10px;
+//     position: absolute;
+//     top: 572px;
+//     right: 5px;
+//     z-index: 300;
+//     font-size: .8em;
+//     background-color: #000000;
+//     letter-spacing: .2em;
+//     text-indent: .2em;
+//     color: #ffffff;
+// }
 
-.history_text:hover {
-    /* INFOMATIONの文字 */
-    top: 566px;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-}
+// .history_text:hover {
+//     /* INFOMATIONの文字 */
+//     top: 566px;
+//     -webkit-transition: all .2s ease-out;
+//     -moz-transition: all .2s ease-out;
+//     transition: all .2s ease-out;
+// }
 
-.history_text:hover a {
-    text-decoration: none;
-    color: #fff;
-}
+// .history_text:hover a {
+//     text-decoration: none;
+//     color: #fff;
+// }
 
 .new_box {
     display: flex;
@@ -872,7 +891,7 @@ hr {
 main {
     position: absolute;
     width: 100%;
-    top: 800px;
+    top: 880px;
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -1201,11 +1220,11 @@ $header-font-family: "Montserrat";
 
 footer {
     position: absolute;
-    top: 1700px;
+    top: 1780px;
     width: 100%;
     justify-content: center;
     background:
-        url(../images/footer_bg_rogo.png) right 200px no-repeat,
+        url(../images/footer_bg_rogo.png) right 150px no-repeat,
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaMK8YYQI6Hwg8kDALudIyIGr+YqAAAAAElFTkSuQmCC) repeat,
         linear-gradient(135deg, #3AA0D4 0%, #076EB2 40%, #222222 100%);
     background-color: rgba(255, 255, 255, 0.5);
@@ -1228,7 +1247,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 1%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     min-width: 1100px;
 }
 

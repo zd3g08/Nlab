@@ -99,16 +99,11 @@ body::-webkit-scrollbar-thumb {
         font-family: 'Playfair Display', serif;
     }
     h1 span {
-        font-size: 5em;
+        font-size: 10.5vw;
         position: relative;
         color: rgba(#ffffff,1);
         }
 }
-
-@media only screen and (min-width: 400px) {
-    .header-midasi {font-size: 50%;}
-}
-
 
 // header {
 //     width: 100%;
@@ -736,7 +731,7 @@ $white: #fff;
     list-style-type: none;
     width: 1100px;
     margin: 0 auto;
-    padding: 0;
+padding: 0 0 0 50px;
 }
 
 .dropmenu:before,
@@ -845,7 +840,7 @@ footer {
     width: 100%;
     justify-content: center;
     background:
-        url(../images/footer_bg_rogo.png) right 130px no-repeat,
+        url(../images/footer_bg_rogo.png) right 150px no-repeat,
         url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQoU2P8//+/FAMRgBGkkJGR8RkhtaMK8YYQI6Hwg8kDALudIyIGr+YqAAAAAElFTkSuQmCC) repeat,
         linear-gradient(135deg, #3AA0D4 0%, #076EB2 40%, #222222 100%);
     background-color: rgba(255, 255, 255, 0.5);

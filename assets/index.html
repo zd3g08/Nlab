@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>千葉大学 中口研究室 | Nakaguchi Lab. in Chiba Univ.</title>
+    <title>千葉大学 中口研究室 | トップページ </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style_time.css" media="screen" />
 </head>
 
 <body id="body_scrollbar">
@@ -36,13 +37,13 @@
     </section><!-- パンくずリストここまで -->
     <header class="header__index">
         <div class="bluelight">
-            <a class="header__title" href="#"> NAKAGUCHI LABORATORY</a>
+            <a class="header__title" href="about.html"> NAKAGUCHI LABORATORY</a>
         </div>
         <section class="buttons">
             <ul id="dropmenu" class="dropmenu">
                 <li><a href="about.html" class="btn btn-2">研究室について</a>
                     <ul>
-                        <li><a class="btn-3" href="info.html">新着情報</a></li>
+                        <li><a class="btn-3" href="info.html">ニュース一覧</a></li>
                         <li><a class="btn-3" href="member.html">スタッフ一覧</a></li>
                         <li><a class="btn-3" href="member.html">学生・卒業生</a></li>
                         <li><a class="btn-3" href="result.html">業績</a></li>
@@ -86,7 +87,7 @@
                 <p>中口研究室ではコンピュータ画像処理技術を活用して <span>診断支援・治療支援・生体計測に関する研究</span>を行っています．</p>
                 <hr>
                 <p class="welcome__to">医工学コース3年生の皆さん<br>他大学から大学院入学を希望する皆さん<br>医工学研究に関心のある企業の方々へ</p>
-                                <hr>
+                <hr>
                 <p>研究室見学，研究相談は随時受け付けています．<br>下記の問い合わせよりご連絡ください．</p>
                 <a class="footer__text" href="#">
                     <div class="welcome__contact">アクセス、お問い合わせはこちら&nbsp;&nbsp;<i class="fa fa-envelope fa-1x" aria-hidden="true"></i></div>
@@ -94,21 +95,89 @@
             </div>
             <div class="welcome_animation">
                 <div class="Professor">
-                <div class="nafuda">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;教授&nbsp;&nbsp;中口&nbsp;俊哉
-                </div>
+                    <div class="nafuda">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;教授&nbsp;&nbsp;中口&nbsp;俊哉
+                    </div>
                 </div>
             </div>
             <p class="triangle"></p>
         </section><!-- welcomeメッセージここまで -->
     </header>
     <!--     新着情報ここから -->
-    <h5 class="infomation_text">INFORMATION</h5>
-    <h6 class="history_text"><a href="#.html">2018年以前の記事を読む</a></h6>
+    <h5 class="information_text">INFORMATION</h5>
+    <!--     <h6 class="history_text"><a href="#.html">2018年以前の記事を読む</a></h6> -->
     <section class="container__new">
+        <div id="timeline">
+            <ul id="dates">
+                <li><a href="#20190607">6.7</a></li>
+                <li><a href="#20190531">5.31</a></li>
+                <li><a href="#20190530">5.30</a></li>
+                <li><a href="#20190518">5.18</a></li>
+                <li><a href="#20190419">4.19</a></li>
+                <li><a href="#20190401">4.1</a></li>
+                <li><a href="#20190318-2">3.18</a></li>
+                <li><a href="#20190318-1">3.18</a></li>
+                <li><a href="#20190316">3.16</a></li>
+                <li><a href="#20190305">3.5</a></li>
+            </ul>
+            <ul id="issues">
+                <li id="20190607">
+                    <img src="images/news_photo/img20190608a.jpg">
+                    <img src="images/news_photo/img20190608b.jpg">
+                    <img src="images/news_photo/img20190608c.jpg">
+                    <p>M2 篠崎真良君，M1 関口陽太君が沖縄コンベンションセンターで開催した第58回日本生体医工学会大会にて発表を行いました.</p>
+                </li>
+                <li id="20190531">
+                    <div class="no_img"><i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;No Image</div>
+                    <p>当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，医学雑誌Hospitalistに掲載されました．</p>
+                </li>
+                <li id="20190530">
+                    <img src="images/news_photo/img20190530.jpg">
+                    <p>中口，吉村が鄭州大学第5付属病院を訪問し，
+                        "Augmented Reality for Medical Applications"というタイトルで講演しました．</p>
+                </li>
+                <li id="20190518">
+                    <img src="images/news_photo/img20190518.jpg">
+                    <p>中口が横浜で開催された第2回医用VRセミナー「医学及び看護教育へのVR技術応用」において，「拡張模擬患者を実現するARシミュレータ」について講演しました．</p>
+                </li>
+                <li id="20190419">
+                    <div class="no_img"><i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;No Image</div>
+                    <p>ブラジル・サンパウロ大学のGeorge Cardoso先生が研究室を見学しました．</p>
+                </li>
+                <li id="20190401">
+                    <div class="no_img"><i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;No Image</div>
+                    <p>修士1年 徳嶺 達紀君，研究生 杜 楽然さん（中国・湖北省出身）がメンバーに加わりました．</p>
+                </li>
+                <li id="20190318-2">
+                    <img src="images/news_photo/img20190318b.jpg">
+                    <img src="images/news_photo/img20190318c.jpg">
+                    <p>学内で開催された国際ワークショップ Multimodal Medical Engineering (MME) Workshop- Color Imaging in Medicine -にて，M1 唐啓超君とM1 篠崎真良君が口頭発表を行いました．</p>
+                </li>
+                <li id="20190318-1">
+                    <img src="images/news_photo/img20190318a.jpg">
+                    <p>学内で開催された工学研究院 研究サブ領域D,F発表会にて，B4 関口陽太君がポスター発表を行いました．</p>
+                </li>
+                <li id="20190316">
+                    <div class="no_img"><i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;No Image</div>
+                    <p>当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，都内で開催された総合診療勉強会「東京どまんなか」で導入されました．</p>
+                </li>
+                <li id="20190305">
+                    <div class="no_img"><i class="fa fa-file-image-o fa-3x" aria-hidden="true"></i>&nbsp;&nbsp;No Image</div>
+                    <p>B4 関口陽太君が筆頭著者で執筆した原著論文 "拡張現実型聴診訓練システムにおけるカメラ内蔵型聴診器デバイスの開発" がVR医学誌へ掲載されることが決定しました．</p>
+                </li>
+            </ul>
+            <div id="grad_left"></div>
+            <div id="grad_right"></div>
+            <a href="#" id="next"><i class="fa fa-chevron-right fa-inverse"></i></a>
+            <a href="#" id="prev"><i class="fa fa-chevron-left fa-inverse"></i></a>
+        </div>
+        <!--
+
+
+
         <div class="main_new" id="main__new">
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_img">
                     <img src="images/news_photo/img20190608a.jpg" alt=""> <img src="images/news_photo/img20190608b.jpg" alt="">
                     <img src="images/news_photo/img20190608c.jpg" alt="">
@@ -118,28 +187,28 @@
                     <hr>
                     <p>M2 篠崎真良君，M1 関口陽太君が沖縄コンベンションセンターで開催した第58回日本生体医工学会大会にて発表を行いました.</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_img">
                     <img src="images/news_photo/img20190530.jpg" alt="">
                 </div>
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.5.30</h4>
                     <hr>
-                    <p>中口，吉村が鄭州大学第5付属病院を訪問し，"Augmented Reality for Medical Applications"というタイトルで講演しました．</p>
+                    <p>中口，吉村が鄭州大学第5付属病院を訪問し，<br>"Augmented Reality for Medical Applications"というタイトルで講演しました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.5.31</h4>
                     <hr>
                     <p>当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，医学雑誌Hospitalistに掲載されました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_img">
                     <img src="images/news_photo/img20190518.jpg" alt="">
                 </div>
@@ -148,9 +217,9 @@
                     <hr>
                     <p>中口が横浜で開催された第2回医用VRセミナー「医学及び看護教育へのVR技術応用」において，「拡張模擬患者を実現するARシミュレータ」について講演しました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.4.19</h4>
                     <hr>
@@ -158,15 +227,15 @@
                 </div>
             </div>
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.4.1</h4>
                     <hr>
                     <p>修士1年 徳嶺 達紀君，研究生 杜 楽然さん（中国・湖北省出身）がメンバーに加わりました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_img">
                     <img src="images/news_photo/img20190318b.jpg" alt="">
                     <img src="images/news_photo/img20190318c.jpg" alt="">
@@ -174,11 +243,11 @@
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.3.18</h4>
                     <hr>
-                    <p>学内で開催された国際ワークショップ Multimodal Medical Engineering (MME) Workshop- Color Imaging in Medicine -にて，M1 唐啓超君とM1 篠崎真良君が口頭発表を行いました．</p>
+                    <p>学内で開催された国際ワークショップ<br> Multimodal Medical Engineering (MME) Workshop- Color Imaging in Medicine -にて，M1 唐啓超君とM1 篠崎真良君が口頭発表を行いました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_img">
                     <img src="images/news_photo/img20190318a.jpg" alt="">
                 </div>
@@ -187,9 +256,9 @@
                     <hr>
                     <p>当研究室が開発した拡張現実型聴診トレーニングシステムEARSが，都内で開催された総合診療勉強会「東京どまんなか」で導入されました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.3.16</h4>
                     <hr>
@@ -197,15 +266,15 @@
                 </div>
             </div>
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_text">
                     <h4 class="new_text__midasi">2019.3.5</h4>
                     <hr>
                     <p>修士1年 徳嶺 達紀君，研究生 杜 楽然さん（中国・湖北省出身）がメンバーに加わりました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで
             <div class="new_box">
-                <!-- 一つ分の記事ここから -->
+                一つ分の記事ここから
                 <div class="new_img">
                     <img src="images/news_photo/img20190124a.jpg" alt="">
                     <img src="images/news_photo/img20190124b.jpg" alt="">
@@ -215,7 +284,7 @@
                     <hr>
                     <p>大分県別府市で開催された国際会議24th International Symposium on Artificial Life and Robotics (AROB2019)にて，D1 Tingxiao Yangさんが口頭発表し，中口が招待講演を行いました．</p>
                 </div>
-            </div><!-- 一つ分の記事ここまで -->
+            </div>一つ分の記事ここまで -->
     </section>
     <!-- 新着情報ここまで -->
     <main>
@@ -326,7 +395,7 @@
             <div class="footer__menu1">
                 <p class="footer__midasi"><span class="footer__midasi__text">研究室について</span></p>
                 <ul class="footer__midasi__ul">
-                    <li><a class="footer__text" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;新着情報</a></li>
+                    <li><a class="footer__text" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;ニュース一覧</a></li>
                     <li><a class="footer__text" href="#"><i class="fa fa-users"></i>&nbsp;&nbsp;スタッフ一覧</a></li>
                     <li><a class="footer__text" href="#"><i class="fa fa-graduation-cap"></i>&nbsp;学生・卒業生</a></li>
                     <li><a class="footer__text" href="#"><i class="fa fa-trophy"></i>&nbsp;&nbsp;業績</a></li>
@@ -409,6 +478,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.timelinr-0.9.7.js"></script>
 <script>
 $(function() {
     // 小ボタンクリック
@@ -478,4 +548,12 @@ $(function() {
     $(".new_text").mCustomScrollbar(csObj);
 });
 </script>
+<script>
+$(function() {
+    $().timelinr({
+        arrowKeys: 'true'
+    })
+});
+</script>
+
 </html>
