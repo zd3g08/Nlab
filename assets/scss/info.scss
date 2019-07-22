@@ -9,7 +9,7 @@
 }
 
 .info_main__container {
-    width: 81%;
+    width: 72%;
     margin: 50px auto;
     text-align: center;
 }
@@ -17,50 +17,49 @@
 .item__parent {
     position: relative;
     display: fixed;
-    justify-content: center;
     float: left;
 }
 
 .item {
-    width: 220px;
+    width: 230px;
     height: 210px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     margin: 5px;
     padding: 10px 0 0 0;
-    box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc,0 0 2px #ccc,0 0 2px #ccc;
     float: left;
     overflow: auto;
 }
 
 .item_x1 {
-    width: 420px;
+    width: 440px;
     height: 210px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     margin: 5px;
     padding: 10px 0 0 0px;
-    box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc,0 0 2px #ccc,0 0 2px #ccc;
     float: left;
     overflow: auto;
 }
 
 .item_x2 {
-    width: 630px;
+    width: 660px;
     height: 210px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     margin: 5px;
     padding: 10px 0 0 0px;
-    box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc,0 0 2px #ccc,0 0 2px #ccc;
     float: left;
     overflow: auto;
 }
 
 .item_x3 {
-    width: 835px;
+    width: 860px;
     height: 210px;
-    background-color: #fff;
+    background-color: #fcfcfc;
     margin: 5px;
     padding: 10px 0 0 0px;
-    box-shadow: 0 0 2px #ccc;
+    box-shadow: 0 0 2px #ccc,0 0 2px #ccc,0 0 2px #ccc;
     float: left;
     overflow: auto;
 }
