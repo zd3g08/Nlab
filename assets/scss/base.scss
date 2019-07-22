@@ -13,6 +13,7 @@
 @import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 @import url('https://fonts.googleapis.com/css?family=Merienda');
@@ -90,19 +91,20 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     justify-content: center;
     width: 100%;
-    top: 251px;
+    top: 248px;
     padding: 0;
-    overflow: hidden;
+    z-index: 50;
     h1 {
-        position: relative;
         text-align: center;
         font-family: 'Playfair Display', serif;
     }
-    h1 span {
-        font-size: 10.5vw;
-        position: relative;
+    h1 p {
+        font-size: 10.4vw;
         color: rgba(#ffffff,1);
         }
+    h1 .span_red {
+        color:#de0b46;
+    }
 }
 
 // header {
@@ -120,26 +122,26 @@ body::-webkit-scrollbar-thumb {
 
 
 //カッコいいメニューここから
-/* Variables */
+// /* Variables */ #de0b46(元の色)
 
 // Core
 $core_width: 25px;
-$core_color:#de0b46;
-$core_glow:0px 0px 70px 20px #de0b46;
+$core_color: rgba(#1e90ff,.5);
+$core_glow:0px 0px 70px 20px #1e90ff;
 
 // Outer 1
 $outer_one_offset: 60px;
 $outer_one_width: 10px;
 $outer_one_height: 30px;
-$outer_one_color: #de0b46;
-$outer_one_glow: 0px 0px 20px 0px #de0b46;
+$outer_one_color: rgba(#1e90ff, .7);
+$outer_one_glow: 0px 0px 20px 0px #1e90ff;
 
 // Outer 2
 $outer_two_offset: 145px;
 $outer_two_width: 28px;
 $outer_two_height: 5px;
-$outer_two_color: #de0b46;
-$outer_two_glow: 0px 0px 20px 0px #de0b46;
+$outer_two_color: #1e90ff;
+$outer_two_glow: 0px 0px 20px 0px #1e90ff;
 
 // Outer 3
 $outer_three_offset: 220px;
@@ -152,8 +154,8 @@ $outer_three_glow: 0px 0px 20px 0px #55E2F9;
 $outer_four_offset: 220px;
 $outer_four_width: 6px;
 $outer_four_height: 5px;
-$outer_four_color: #de0b46;
-$outer_four_glow: 0px 0px 20px 0px #de0b46;
+$outer_four_color: #1e90ff;
+$outer_four_glow: 0px 0px 20px 0px #1e90ff;
 
 // Outer 5
 $outer_five_offset: 205px;
@@ -167,7 +169,7 @@ $menu_glow: 0px 0px 50px rgba(222, 11, 70, 0.27);
 /* Placeholders */
 
 %center {
-    left: -80%;
+    left: -77%;
     right: 0%;
     top: 185px;
     position: absolute;
@@ -253,7 +255,7 @@ header {
     padding: 0 0 0 0px;
     font-family: montserrat;
     perspective: 800;
-    background: radial-gradient(ellipse at top left, rgba(222, 11, 70, 0.26) -160%, rgba(255, 255, 255, 0) 103%), -webkit-radial-gradient(center, ellipse cover, #0C1019 0%, #0B0B0E 100%);
+    background: radial-gradient(ellipse at top left, rgba(222, 11, 70, 0.26) -160%, rgba(255, 255, 255, 0) 103%), -webkit-radial-gradient(center, ellipse cover,#0C1019 30%, #0B0B0E 100%);
     overflow: hidden;
 
     .grain {
@@ -389,13 +391,13 @@ header {
                 left: -530px;
                 transform: rotatez(5deg);
                 top: 0px;
-                background: #DE0B46;
+                background: #1e90ff;
                 position: absolute;
                 opacity: 0;
             }
 
             .future_ui__piece {
-                // border: 3px solid #DE0B46;
+                // border: 3px solid #1e90ff;
                 position: absolute;
                 font-weight: 900;
                 padding: 30px;
@@ -415,7 +417,7 @@ header {
                             cursor: pointer;
                             color: white;
                             animation: blink .4s .4s;
-                            background: #DE0B46;
+                            background: #1e90ff;
                             transform: rotate($i*10 + (0deg) - 55) translatex(20px);
                             box-shadow: 0px 0px 55px rgba(222, 11, 70, 0.77);
 
@@ -731,7 +733,7 @@ $white: #fff;
     list-style-type: none;
     width: 1100px;
     margin: 0 auto;
-padding: 0 0 0 50px;
+padding: 0 0 0 130px;
 }
 
 .dropmenu:before,
@@ -818,19 +820,11 @@ padding: 0 0 0 50px;
 // ヘッダーここまで
 
 // mainコンテンツここから
-main .main__base {
-  position: absolute;
-    width: 100%;
-    margin: 0 auto;
-z-index: 200;
-}
 
 
-.container {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 100px;
-}
+
+
+
 
 // mainここまで
 

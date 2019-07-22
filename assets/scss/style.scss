@@ -74,7 +74,7 @@ font-size: 1.5em;
     position: absolute;
     left: 0;
     top: 0;
-    background: linear-gradient(0deg, #990000 0%, #ff0000 100%);
+    background: linear-gradient(0deg, #de0b46 0%, #ff0000 100%);
     vertical-align: middle;
     text-align: center;
     z-index: 200;
@@ -491,7 +491,7 @@ padding: 0 0 0 50px;
     right: 230px;
     top: 270px;
     display: block;
-    width: 360px;
+    width: 330px;
     height: 350px;
     background-color: rgba(#ffffff, .6);
     box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
@@ -499,7 +499,7 @@ padding: 0 0 0 50px;
     font-size: 0.75em;
     text-align: center;
     overflow: auto;
-    padding: 15px;
+    padding: 10px;
 }
 
 .welcome h6 {
@@ -510,7 +510,7 @@ padding: 0 0 0 50px;
 
 .welcome hr {
     border-color: #ffffff;
-    width: 80%;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -530,11 +530,11 @@ padding: 0 0 0 50px;
 }
 
 .welcome__contact {
-    width: 60%;
+    width: 300px;
     height: 45px;
     border: 0px;
     border-radius: .1em;
-    background: #ff0000;
+    background: #de0b46;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -1345,7 +1345,7 @@ span.tel_text {
     height: 45px;
     border: 0px;
     border-radius: .1em;
-    background: #ff0000;
+    background: #de0b46;
     text-align: center;
     display: table-cell;
     vertical-align: middle;

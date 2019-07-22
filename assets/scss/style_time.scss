@@ -16,7 +16,7 @@
 
   #timeline {
   font-family: Roboto, sans-serif;
-    width: 70%;
+    width: 50%;
     height: 300px;
     overflow: hidden;
     margin: 0px auto;
@@ -55,7 +55,7 @@
       text-align: center;
     }
       #issues li {
-        width: 1000px;
+        width: 700px;
         height: 400px;
         list-style: none;
         float: left;
@@ -108,12 +108,11 @@ font-size: 1.3em;
       display: block;
       justify-content: center;
       top: 180px;
-      width: 30px;
-      height: 30px;
-      border: 1px solid red;
-      padding-top: 3px;
+      width: 33px;
+      height: 33px;
+      padding-top: 6px;
       border-radius: 50%;
-      background-color: red;
+      background-color: #de0b46;
       color: #fff;
       text-align: center;
     }
