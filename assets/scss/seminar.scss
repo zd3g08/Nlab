@@ -14,7 +14,7 @@ main {
     margin: 30px auto;
     background-color: rgba(#ffffff, .6);
     box-shadow: 0 0 2px #ccc,0 0 2px #ccc;
-    padding: 10px 0 0 0;
+    padding: 30px 0 0 0;
     font-size: .9em;
     text-align: center;
 }
@@ -43,3 +43,89 @@ main {
     text-align: left;
     font-size: 1.05em;
     }
+
+.semi_contact__text {
+    width: 500px;
+    margin: -100px auto 0 auto;
+    text-align: left;
+    text-align: justify;
+}
+
+h5 {
+  margin-top: 10px;
+}
+
+//開催中のセミナーのボックス（はしっこにリボン）
+
+.ribbon20-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 90px 0 45px 0;
+  width: 900px;
+  background: rgba(#eeeeee,.3);
+  }
+.ribbon20 {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  color: white;
+  background: #de0b46;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+}
+.ribbon20:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -7px;
+  border: none;
+  height: 58px;
+  width: 7px;
+  background: #de0b46;
+  border-radius: 5px 0 0 5px;
+}
+.ribbon20:after {
+  position: absolute;
+  content: '';
+  bottom: -7px;
+  left: -5px;
+  border: none;
+  height: 7px;
+  width: 5px;
+  background: #990831;
+  border-radius: 5px 0 0 5px;
+}
+
+table{
+  border-collapse:collapse;
+  margin:0 auto;
+  width: 800px;
+    background-color: #fff;
+  text-align: left;
+
+}
+td,th{
+  border:1px solid #ccc;
+  padding:10px;
+  text-align: justify;
+}
+th{
+  border-left:5px solid #076eb2;
+  color:#076eb2;
+  width: 140px;
+  font-size: 1.3em;
+}
+
+td:nth-of-type(odd) {
+    width: 60px;
+    text-align: center;
+    font-weight: 900;
+}
