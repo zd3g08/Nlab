@@ -11,16 +11,16 @@
 }
 .sociales {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
   #timeline {
   font-family: Roboto, sans-serif;
-    width: 1100px;
-    height: 300px;
+    width: 1000px;
+    height: 250px;
     overflow: hidden;
     margin: 0px auto;
-    padding-top: 20px;
+    padding-top:10px;
     position: relative;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFUlEQVQYV2P8////fwYGBgZGEAECAD3vA/9fGZEEAAAAAElFTkSuQmCC') left 65px repeat-x;
   background-color: #000;
@@ -41,7 +41,7 @@
       }
         #dates a {
           line-height: 38px;
-          padding-bottom: 10px;
+          padding-bottom: 0px;
         }
         #dates .selected {
               font-size: 38px;
@@ -49,20 +49,20 @@
 
     #issues {
       width: 700px;
-      height: 400px;
+      height: 250px;
       overflow: hidden;
       padding-left: 50px;
       text-align: center;
     }
       #issues li {
         width: 700px;
-        height: 400px;
+        height: 250px;
         list-style: none;
         float: left;
       }
         #issues li img {
-          width: 200px;
-          height: 200px;
+          width: 150px;
+          height: 150px;
           float: left;
           margin: 5px 2px 10px 0;
           background: transparent;
@@ -74,11 +74,11 @@
           margin-right: 20px;
         }
         #issues li {
-          width: 900px;
+          width: 950px;
           font-size: .9em;
         }
         #issues li p {
-          margin-right: 0px;
+          margin-right: 50px;
           margin-top: 0px;
           font-weight: normal;
           line-height: 22px;
@@ -91,8 +91,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-          width: 200px;
-          height: 200px;
+          width: 150px;
+          height: 150px;
           background-color: #555555;
           float: left;
           margin: 5px 20px 10px 0;
