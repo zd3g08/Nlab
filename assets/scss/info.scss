@@ -1,7 +1,6 @@
 .info__main {
     width: 100%;
     display: flex;
-    justify-content: center;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIUlEQVQoU2O8ffu2LwMRgBGkUFVVdTMhtaMK8YYQ0cEDAO63JulOwqN5AAAAAElFTkSuQmCC');
     margin: 0 auto;
     text-align: center;
@@ -9,9 +8,10 @@
 }
 
 .info_main__container {
-    width: 72%;
+    width: 900px;
     margin: 50px auto;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 .item__parent {
