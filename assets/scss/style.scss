@@ -489,10 +489,10 @@ padding: 0 0 0 50px;
     /* ウェルカムメッセージ */
     position: absolute;
     right: 230px;
-    top: 320px;
+    top: 280px;
     display: block;
-    width: 300px;
-    height: 330px;
+    width: 280px;
+    height: 400px;
     background-color: rgba(#ffffff, .6);
     box-shadow: 0 0 5px rgba(10, 175, 230, 1), 0 0 5px rgba(10, 175, 230, 0);
     z-index: 300;
@@ -503,8 +503,8 @@ padding: 0 0 0 50px;
 }
 
 .welcome h6 {
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 900;
+    font-size: 1.5em;
     padding: 5px 10px;
 }
 
@@ -812,6 +812,16 @@ background-color: #000;
     color: #ffffff;
 }
 
+main h3 {
+    width: 300px;
+    margin: 0 auto 15px auto;
+    font-weight: 900;
+    color: #111;
+    font-size: 24px;
+    position: relative;
+    padding: 8px 0 8px 24px;
+    border-radius: 32px 0;
+}
 // .history_text {
 //     /* 以前の記事を読む、の文字 */
 //     display: inline-block;
@@ -1070,9 +1080,9 @@ $header-font-family: "Montserrat";
 
 // Card Article
 .card__image {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
     display: block;
     min-height: 240px;
     overflow: hidden;
